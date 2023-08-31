@@ -65,7 +65,5 @@ El comando `npm run deploy` que hemos creado previamente, envia el contenido del
 
 Para acceder a la página web, entramos al repositorio y vamos a la seccion **"settings"** y en la barra lateral izquierda a la sección **"Pages"**. Una vez dentro se nos dará la dirección mediante la cual podremos ingresar a la página web, en este caso concreto la direccion es **"https://lordexe22.github.io/My-Code-Hero/"**
 
-
-[![Esta es una imagen de ejemplo](My-Code-Hero/readme-img1.png)](https://ejemplo.com)
-
+![readme-img1.png](./public/readme-img1.png)
 

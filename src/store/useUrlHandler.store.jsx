@@ -14,7 +14,7 @@
 // Se requere la importación del módulo create de la libreria 'zustand' para el manejo de variables de estado globales.
 import { create } from "zustand";
 
-const useUrlMaker = create((set) => ({
+const useUrlHandler = create((set) => ({
 
     urlTech: localStorage.getItem('urlTech') || '', 
     urlSection: localStorage.getItem('urlSection') || '', 
@@ -29,17 +29,17 @@ const useUrlMaker = create((set) => ({
         localStorage.setItem('urlSection', section);
     },
     getUrlTech: () => {
-        return useUrlMaker.getState().urlTech;
+        return useUrlHandler.getState().urlTech;
     },
     getUrlSection: () => {
-        return useUrlMaker.getState().urlSection;
+        return useUrlHandler.getState().urlSection;
     },
     getUrlPage: () => {
-        return useUrlMaker.getState().urlPage;
+        return useUrlHandler.getState().urlPage;
     },
     updateUrlPage: () => {
-        const urlTech = useUrlMaker.getState().urlTech;
-        const urlSection = useUrlMaker.getState().urlSection; 
+        const urlTech = useUrlHandler.getState().urlTech;
+        const urlSection = useUrlHandler.getState().urlSection; 
         if(urlTech && urlSection){
             set({ urlPage: `${urlTech}/${urlSection}` });
             localStorage.setItem('urlPage', `${urlTech}/${urlSection}`);
@@ -47,4 +47,4 @@ const useUrlMaker = create((set) => ({
     }
 }));
 
-export default useUrlMaker;
+export default useUrlHandler;

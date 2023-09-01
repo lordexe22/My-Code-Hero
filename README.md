@@ -6,10 +6,13 @@ A lo largo de este documento se va a detallar como se ha implementado esta pági
 ### Secciones
 * <a href="#t1">Configuración de github pages</a>
 * <a href="#t2">Creación de la página web</a>
+* <a href="#t3">Modelos responsivos</a>
+* <a href="#t4">Home page</a>
+
 
 <div id="t1"></div>
 
-### **Configuración de github pages**
+## **Configuración de github pages**
 Para evitar problemas en la carga de imagenes y para poder testear esta página en varios dispositivos, es que se carga este trabajo en github pages. Se detallan a continuación los pasos a seguir:
 
 1. ***Crear un repositorio en github:*** El nombre del repositorio en cuestion es **"My-Code-Hero"**
@@ -53,7 +56,7 @@ export default defineConfig({
 
 <div id="t2"></div>
 
-### Creación de la página web
+## Creación de la página web
 Para crear la página web debemos haber completado la configuración presentada en el apartado anterior. Posteriomente vamos a construir el módelo de nuestra página web y despues lo subiremos a GitHub pages. Para esto utilizamos los comandos:
 ```
 npm run build
@@ -69,3 +72,38 @@ ___
 
 ![readme-img1.png](./public/readme-img1.png)
 ___
+
+<div id="t3"></div>
+
+## Modelos responsivos
+
+Se han implementado 5 modelos para visualizar la página en distintos tipos de dispositivos y con distintas orientaciones. Los mismos son:
+* Modelo 1 : small portrait (celulares)
+* Modelo 2 : medium/large portrait (tablets)
+* Modelo 3 : small landscape (celulares)
+* Modelo 4 : medium landscape (tablets)
+* Modelo 5 : large landscape (pc)
+
+La estructura básica de la aplicación es un contenedor de tipo grid el cual acomoda convenientemente, según el caso, los elementos **"header"**, **"nav"** y **"main"**.
+
+Se ha implementado una hoja de estilos **"appContainer.style.css"** la cual configura aspectos generales de la aplicación como la disposición de los elementos mencionados anteriormente y configuraciones globales como los estilos, colores de fondo, etc. 
+
+
+
+<div id="t4"></div>
+
+## Home Page 
+
+La home page se ejecuta mediante el componente **"Home.page.jsx"** en la ruta principal **"/My-Code-Hero"** y la misma brinda informacion básica de la página, ademas cuenta con todos los enlaces a las distintas tecnologias, las cuales podrán ser accedidas posteriormente desde el **"header"**.
+
+Para implementar este componente, se trabajo en paralelo implementando los enlaces a las distintas tecnologias de estudio, las cuales cuentan con un icono seguido del nombre de la tecnologia.
+
+La home page contará con una lista de enlaces a las cuales el usuario será redireccionado, con lo cual mediante react router vamos a cambiar la url respetando el siguiente formato:
+```
+/My-Code-Hero/tecnologia/seccion
+```
+La tecnologia va a depender del campo seleccionado y al ingresar por primera vez a alguna de ellas, la sección tendra por defecto el valor **"introduccion"**, por lo cual, si se ingresa por ejemplo al tech **"javascript"** la ruta formada será:
+```
+/My-Code-Hero/javascript/introduccion
+```
+Posteriormente, se podrá cambiar de sección mediante la barra de navegación.

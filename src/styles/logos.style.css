@@ -1,0 +1,279 @@
+/* SMALL PORTRAIT(VERTICAL) > MODEL 1 *********************************************************/
+@media screen and (max-width: 480px) and (orientation: portrait){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 2.8vh;
+        --ico-size: 5.5vh;
+        --theme-ico-size: 5vh;
+    }
+
+    /************************************/
+    /*** Ajusta la fuente de los tech ***/
+    /************************************/
+
+    .logo>div{ 
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 1vh;
+    }
+}
+/* MEDIUM PORTRAIT(VERTICAL) > MODEL 2 ********************************************************/
+@media screen and (min-width: 481px) and (orientation: portrait){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 3.5vh;
+        --ico-size: 6vh;
+        --theme-ico-size: 5vh;
+    }
+
+    /************************************/
+    /*** Ajusta la fuente de los tech ***/
+    /************************************/
+
+    .logo>div{ 
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 2vh;
+    }
+
+}
+/* SMALL LANDSCAPE(HORIZONTAL) > MODEL 3 ******************************************************/
+@media screen and (max-height: 480px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --ico-size: 10vh;
+        --theme-ico-size: 8vh;
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+   
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+
+}
+/* MEDIUM LANDSCAPE(HORIZONTAL) > MODEL 4 *****************************************************/
+@media screen and (min-height: 481px) and (max-width: 1024px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 5vh;
+        --ico-size: 8vh;
+        --theme-ico-size: 6vh;
+    }
+
+    /************************************/
+    /*** Ajusta la fuente de los tech ***/
+    /************************************/
+
+    .logo>div{ /* Ajusta la fuente de los tech */
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+
+}
+/* BIG LANDSCAPE > MODEL 5 *****************************************************/
+@media screen and (min-height: 481px) and (min-width: 1025px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 5vh;
+        --ico-size: 8vh;
+        --theme-ico-size: 6vh;
+    }
+
+    /************************************/
+    /*** Ajusta la fuente de los tech ***/
+    /************************************/
+
+    .logo>div{ 
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+}

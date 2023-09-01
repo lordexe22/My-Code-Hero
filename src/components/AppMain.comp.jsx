@@ -1,18 +1,16 @@
-/*  Carga los componentes del header, por un lado el boton para cambiar el tema actual de la pagina.   *
- *  Por otro lado se carga el componente <TechSelector> que es el responsable de desplegar la lista    *
- *  con todas las tecnologias desarrolladas en la pagina.                                              */
+/*  Cara la página correspondiente acorde a los valores almacenados en el store useUrlHandler  */
 
 // modules
-import React, {useEffect} from "react";
+import React from "react";
 
 // styles
-import '../styles/header.style.css'
+import '../styles/main.style.css'
 
-export default function AppHeader(){
+export default function AppMain(){
 
     return(
-        <header>
-            <h2>Header</h2>
-        </header>
+        <main>
+            <h2>Main</h2>
+        </main>
     );
 }

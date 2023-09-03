@@ -4,23 +4,26 @@
 import '../styles/header.style.css';
 
 // stores
-import useScreenModel from '../store/useScreenModel.store.jsx';
+import useUrlHandler from '../store/useUrlHandler.store.jsx'
 
 // modules
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const LogoHomePage = () => {
 
-  const screenModel = useScreenModel();
+  const navigate = useNavigate();
+  const {setUrlTech, setUrlSection, updateUrlPage} = useUrlHandler();
 
   const handleClick = () => {
-    console.log('Le diste click al logo')
+    setUrlTech('');
+    setUrlSection('');
+    updateUrlPage();
+    
+    navigate('/My-Code-Hero/');
   };
 
   return (
-
-    screenModel.model===1?
     <div className="logo logo-home-page">
       <img
         onClick={handleClick}
@@ -29,44 +32,6 @@ const LogoHomePage = () => {
         className="main-logo"
       />
     </div>
-    : screenModel.model===2?
-    <div className="logo logo-home-page">
-      <img
-        onClick={handleClick}
-        src="../../public/logo2.jpg"
-        alt="My Code Hero logo"
-        className="main-logo"
-      />
-    </div>
-    : screenModel.model===3?
-    <div className="logo logo-home-page">
-      <img
-        onClick={handleClick}
-        src="../../public/logo2.jpg"
-        alt="My Code Hero logo"
-        className="main-logo"
-      />
-    </div>
-    : screenModel.model===4?
-    <div className="logo logo-home-page">
-      <img
-        onClick={handleClick}
-        src="../../public/logo2.jpg"
-        alt="My Code Hero logo"
-        className="main-logo"
-      />
-    </div>
-    : screenModel.model===5?
-    <div className="logo logo-home-page">
-      <img
-        onClick={handleClick}
-        src="../../public/logo2.jpg"
-        alt="My Code Hero logo"
-        className="main-logo"
-      />
-    </div>
-    : null
-
   );
 };
 

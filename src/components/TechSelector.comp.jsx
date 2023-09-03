@@ -20,6 +20,7 @@ import LogoHTML from './LogoHTML.comp.jsx';
 import LogoCSS from './LogoCSS.comp.jsx'; 
 import LogoJS from './LogoJS.comp.jsx';
 import LogoTS from './LogoTS.comp.jsx';
+import LogoGit from './LogoGit.comp.jsx';
 
 export default function TechSelector({model}){
 
@@ -27,6 +28,7 @@ export default function TechSelector({model}){
     const techOptions = [
         { url: 'html', component: <LogoHTML/> },
         { url: 'css', component: <LogoCSS/> },
+        { url: 'git', component: <LogoGit/> },
         { url: 'javascript', component: <LogoJS/> },
         { url: 'typescript', component: <LogoTS/> },
         { url: 'react-router', component: <LogoReactRouter/> },

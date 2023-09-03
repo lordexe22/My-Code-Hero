@@ -1,6 +1,7 @@
 // components
 import LogoHTML from "../components/LogoHTML.comp";
 import LogoCSS from "../components/LogoCSS.comp";
+import LogoGit from "../components/LogoGit.comp";
 import LogoJS from "../components/LogoJS.comp";
 import LogoTS from "../components/LogoTS.comp";
 import LogoReactRouter from "../components/LogoReactRouter.comp";
@@ -39,6 +40,7 @@ export default function Home(){
             <ThemeButton/>
             <div onClick={() => clickHandler('html')}><LogoHTML/></div>
             <div onClick={() => clickHandler('css')}><LogoCSS/></div>
+            <div onClick={() => clickHandler('git')}><LogoGit/></div>
             <div onClick={() => clickHandler('javascript')}><LogoJS/></div>
             <div onClick={() => clickHandler('typescript')}><LogoTS/></div>
             <div onClick={() => clickHandler('react-router')}><LogoReactRouter/></div>

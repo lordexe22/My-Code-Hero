@@ -16,6 +16,12 @@ const useTechSections = create((set)=>({
            {text: "Introducción", url: "introduccion"},
        ]},
     ],
+    "git": [
+        {"category":"Inicio",
+        "sections":[
+           {text: "Introducción", url: "introduccion"},
+       ]},
+    ],
     "javascript": [
         {"category":"Inicio",
         "sections":[

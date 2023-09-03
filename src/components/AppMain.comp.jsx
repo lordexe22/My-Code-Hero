@@ -16,6 +16,8 @@ import IntroduccionTypeScript from "../pages/TypeScript/IntroduccionTypeScript.p
 import IntroduccionReactRouter from "../pages/React-Router/Introduccion_ReactRouter.page";
 import InstalacionReactRouter from "../pages/React-Router/Instalacion_ReactRouter.page";
 import EstructuraBasicaReactRouter from "../pages/React-Router/EstructuraBasica_ReactRouter.page";
+// git pages
+import IntroduccionGit from "../pages/Git/IntroduccionGit.page";
 
 // store
 import useTheme from '../store/useTheme.store.jsx';
@@ -34,6 +36,11 @@ export default function AppMain(){
                 {/* CSS pages */}
                 <Route path="/css" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionCss/>}></Route>
+                </Route>
+
+                {/* git pages */}
+                <Route path="/git" element={<Outlet/>}>
+                    <Route path="introduccion" element={<IntroduccionGit/>}></Route>
                 </Route>
 
                 {/* JavaScript pages */}

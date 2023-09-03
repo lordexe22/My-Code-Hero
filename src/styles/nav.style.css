@@ -297,32 +297,32 @@ nav, nav *{
     nav>ul>li>ul>li{
         margin: 3vh 2vw;
     }
-    #container>nav>ul>li>h3{
+    #app-container>nav>ul>li>h3{
         font-size: medium;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    #container>nav.dark>ul>li>h3{
+    #app-container>nav.dark>ul>li>h3{
         color: var(--color-category-dark);
     }
-    #container>nav.light>ul>li>h3{
+    #app-container>nav.light>ul>li>h3{
         color: var(--color-category-light);
     }    
-    #container>nav>ul>li>ul>li>a{
+    #app-container>nav>ul>li>ul>li>a{
         text-decoration: none;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         font-size: small;
     }
-    #container>nav.dark>ul>li>ul>li>a{
+    #app-container>nav.dark>ul>li>ul>li>a{
         color: var(--color-section-dark);
     }
-    #container>nav.dark>ul>li>ul>li>a.active{
+    #app-container>nav.dark>ul>li>ul>li>a.active{
         color: var(--color-active-dark);
     }
-    #container>nav.light>ul>li>ul>li>a{
+    #app-container>nav.light>ul>li>ul>li>a{
         color: var(--color-section-light);
     }
-    #container>nav.light>ul>li>ul>li>a.active{
+    #app-container>nav.light>ul>li>ul>li>a.active{
         color: var(--color-active-light);
     }
 
@@ -374,32 +374,32 @@ nav, nav *{
     nav>ul>li>ul>li{
         margin: 3vh 2vw;
     }
-    #container>nav>ul>li>h3{
+    #app-container>nav>ul>li>h3{
         font-size: x-large;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    #container>nav.dark>ul>li>h3{
+    #app-container>nav.dark>ul>li>h3{
         color: var(--color-category-dark);
     }
-    #container>nav.light>ul>li>h3{
+    #app-container>nav.light>ul>li>h3{
         color: var(--color-category-light);
     }    
-    #container>nav>ul>li>ul>li>a{
+    #app-container>nav>ul>li>ul>li>a{
         text-decoration: none;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         font-size: 1.1rem;
     }
-    #container>nav.dark>ul>li>ul>li>a{
+    #app-container>nav.dark>ul>li>ul>li>a{
         color:var(--color-section-dark);
     }
-    #container>nav.dark>ul>li>ul>li>a.active{
+    #app-container>nav.dark>ul>li>ul>li>a.active{
         color: var(--color-active-dark);
     }
-    #container>nav.light>ul>li>ul>li>a{
+    #app-container>nav.light>ul>li>ul>li>a{
         color:var(--color-section-light);
     }
-    #container>nav.light>ul>li>ul>li>a.active{
+    #app-container>nav.light>ul>li>ul>li>a.active{
         color: var(--color-active-light);
     }
     
@@ -439,32 +439,32 @@ nav, nav *{
     nav>ul>li>ul>li{
         margin: 3vh 1vw;
     }
-    #container>nav>ul>li>h3{
+    #app-container>nav>ul>li>h3{
         font-size: x-large;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-    #container>nav.dark>ul>li>h3{
+    #app-container>nav.dark>ul>li>h3{
         color: var(--color-category-dark);
     }
-    #container>nav.light>ul>li>h3{
+    #app-container>nav.light>ul>li>h3{
         color: var(--color-category-light);
     }    
-    #container>nav>ul>li>ul>li>a{
+    #app-container>nav>ul>li>ul>li>a{
         text-decoration: none;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         font-size: medium;
     }
-    #container>nav.dark>ul>li>ul>li>a{
+    #app-container>nav.dark>ul>li>ul>li>a{
         color:var(--color-section-dark);
     }
-    #container>nav.dark>ul>li>ul>li>a.active{
+    #app-container>nav.dark>ul>li>ul>li>a.active{
         color: var(--color-active-dark);
     }
-    #container>nav.light>ul>li>ul>li>a{
+    #app-container>nav.light>ul>li>ul>li>a{
         color:var(--color-section-light);
     }
-    #container>nav.light>ul>li>ul>li>a.active{
+    #app-container>nav.light>ul>li>ul>li>a.active{
         color: var(--color-active-light);
     }
 }

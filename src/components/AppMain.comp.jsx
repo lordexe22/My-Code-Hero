@@ -9,16 +9,22 @@ import '../styles/main.style.css'
 
 // pages
 import IntroduccionHtml from "../pages/HTML/IntroduccionHtml.page.jsx";
-import IntroduccionCss from "../pages/CSS/IntroduccionCss.page.jsx"
-import IntroduccionJavaScript from "../pages/JavaScript/IntroduccionJavaScript.page.jsx"
-import IntroduccionTypeScript from "../pages/TypeScript/IntroduccionTypeScript.page.jsx"
-import IntroduccionReactRouter from "../pages/React-Router/IntroduccionReactRouter.page";
+import IntroduccionCss from "../pages/CSS/IntroduccionCss.page.jsx";
+import IntroduccionJavaScript from "../pages/JavaScript/IntroduccionJavaScript.page.jsx";
+import IntroduccionTypeScript from "../pages/TypeScript/IntroduccionTypeScript.page.jsx";
+// react router pages
+import IntroduccionReactRouter from "../pages/React-Router/Introduccion_ReactRouter.page";
+import InstalacionReactRouter from "../pages/React-Router/Instalacion_ReactRouter.page";
+import EstructuraBasicaReactRouter from "../pages/React-Router/EstructuraBasica_ReactRouter.page";
 
+// store
+import useTheme from '../store/useTheme.store.jsx';
 
 export default function AppMain(){
+    const {globalTheme} = useTheme();
 
     return(
-        <main>
+        <main className={globalTheme}>
             <Routes>
                 {/* HTML pages */}
                 <Route path="/html" element={<Outlet/>}>
@@ -43,6 +49,8 @@ export default function AppMain(){
                 {/* React Router Pager */}
                 <Route path="/react-router" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionReactRouter/>}></Route>
+                    <Route path="instalacion" element={<InstalacionReactRouter/>}></Route>
+                    <Route path="estructura-basica" element={<EstructuraBasicaReactRouter/>}></Route>
                 </Route>
 
             </Routes>

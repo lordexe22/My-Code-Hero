@@ -17,8 +17,6 @@ import Home from '../pages/Home.page.jsx';
 // stores
 import useTheme from "../store/useTheme.store.jsx";
 
-
-
 export default function ScreenLoader(){
     const {globalTheme} = useTheme();
     return(

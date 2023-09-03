@@ -4,6 +4,7 @@
 
 // stores
 import useTheme from '../store/useTheme.store.jsx';
+import useScreenModel from '../store/useScreenModel.store.jsx';
 
 // styles
 import '../styles/header.style.css';
@@ -13,8 +14,11 @@ import TechSelector from "./TechSelector.comp.jsx";
 import ThemeButton from "./ThemeButton.comp.jsx";
 import LogoHomePage from './LogoHomePage.comp.jsx';
 
-export default function AppHeader({model}){
+export default function AppHeader(){
     const theme = useTheme().globalTheme;
+
+    const {model} = useScreenModel();
+    
     return(
         <header className={`${theme}`}>
             <TechSelector model={model} theme={theme}/>

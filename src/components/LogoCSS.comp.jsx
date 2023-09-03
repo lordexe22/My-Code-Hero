@@ -6,7 +6,7 @@ import useScreenModel from '../store/useScreenModel.store.jsx';
 
 export default function LogoCSS(){
 
-    const screenModel = useScreenModel();
+    const {model} = useScreenModel();
     const theme = useTheme().globalTheme;
 
     const logoStyle = {
@@ -14,7 +14,7 @@ export default function LogoCSS(){
     };
 
     return (
-        screenModel.model===3?
+        model===3?
         <div className="logo logo-css">
             <img src="/My-Code-Hero/css-icon.jpg" alt="logo css"/>
         </div>

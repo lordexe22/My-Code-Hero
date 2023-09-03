@@ -3,7 +3,7 @@ export default function IntroduccionCss(){
 
     return(
         <>
-            <h2>IntroduccionCss</h2>
+            <h3>IntroduccionCss</h3>
         </>
     )
 }

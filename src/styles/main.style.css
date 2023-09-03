@@ -1,0 +1,308 @@
+:root{
+    --title-light: #202020ff;
+    --text-light: #101010ff;
+    --hr-light: thin solid black;
+
+    --title-dark: #edededff;
+    --text-dark: #edededd0;
+    --hr-dark: thin solid #ffffff80;
+}
+
+main{
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+
+}
+
+/**********************************************************************************************/
+/******************** AJUSTES DE MEDIA QUIERIES PARA PC, TABLET Y CELULAR *********************/
+/**********************************************************************************************/
+
+/* SMALL PORTRAIT(VERTICAL) > MODEL 1 *********************************************************/
+@media screen and (max-width: 480px) and (orientation: portrait){
+
+    /*******************************/
+    /*** Configuraciones de main ***/
+    /*******************************/
+
+    main{
+        grid-row: 3 / 4;
+        padding: 2vh 5vw;
+    }
+ 
+    /***************/
+    /*** Titulos ***/
+    /***************/
+
+    main h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3vh;
+        padding: 3vh 0;
+        width: 100%;
+    }
+    main.dark h3{
+        color: var(--title-dark);
+        border-bottom: var(--hr-dark);
+    }
+    main.light h3{
+        color: var(--title-lightr);
+        border-bottom: var(--hr-light);
+    }
+
+    /*******************************/
+    /*** Texto (etiquetas: p, li)***/
+    /*******************************/
+
+    main p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2vh;
+    }
+    main.dark p{
+        color: var(--text-dark);
+    }
+    main.light p{
+        color: var(--text-light);
+    }
+    main li{
+        /* list-style: none; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2vh;
+        margin-left: 2vh;
+    }
+    main.dark li{
+        color: var(--text-dark);
+    }
+    main.light li{
+        color: var(--text-light);
+    }
+}
+
+/* MEDIUM PORTRAIT(VERTICAL) > MODEL 2 ********************************************************/
+@media screen and (min-width: 481px) and (orientation: portrait){
+  
+    /*******************************/
+    /*** Configuraciones de main ***/
+    /*******************************/
+
+    main{
+        grid-row: 3 / 4;
+        padding: 2vh 5vw;
+    }
+ 
+    /***************/
+    /*** Titulos ***/
+    /***************/
+
+    main h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3vh;
+        padding: 3vh 0;
+        width: 100%;
+    }
+    main.dark h3{
+        color: var(--title-dark);
+        border-bottom: var(--hr-dark);
+    }
+    main.light h3{
+        color: var(--title-lightr);
+        border-bottom: var(--hr-light);
+    }
+
+    /*******************************/
+    /*** Texto (etiquetas: p, li)***/
+    /*******************************/
+
+    main p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2vh;
+    }
+    main.dark p{
+        color: var(--text-dark);
+    }
+    main.light p{
+        color: var(--text-light);
+    }
+    main li{
+        /* list-style: none; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2vh;
+        margin-left: 2vw;
+
+    }
+    main.dark li{
+        color: var(--text-dark);
+    }
+    main.light li{
+        color: var(--text-light);
+    }
+}
+
+/* SMALL LANDSCAPE(HORIZONTAL) > MODEL 3 ******************************************************/
+@media screen and (max-height: 480px) and (orientation: landscape){
+
+    /* Configuraciones del main */
+    main{
+        grid-area: 1 / 2 / 3 / 3;
+        padding: 2vh 4vw;
+    }
+
+    /***************/
+    /*** Titulos ***/
+    /***************/
+
+    main h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5vh;
+        padding: 5vh 0;
+        width: 100%;
+    }
+    main.dark h3{
+        color: var(--title-dark);
+        border-bottom: var(--hr-dark);
+    }
+    main.light h3{
+        color: var(--title-lightr);
+        border-bottom: var(--hr-light);
+    }
+
+    /*******************************/
+    /*** Texto (etiquetas: p, li)***/
+    /*******************************/
+
+    main p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 2vh 0;
+        font-size: 3vh;
+    }
+    main.dark p{
+        color: var(--text-dark);
+    }
+    main.light p{
+        color: var(--text-light);
+    }
+    main li{
+        /* list-style: none; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 2vh 0;
+        font-size: 3vh;
+        margin-left: 2vw;
+    }
+    main.dark li{
+        color: var(--text-dark);
+    }
+    main.light li{
+        color: var(--text-light);
+    }
+}
+
+/* MEDIUM LANDSCAPE(HORIZONTAL) > MODEL 4 *****************************************************/
+@media screen and (min-height: 481px) and (max-width: 1024px) and (orientation: landscape){
+  
+    main{
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 2vh 4vw;
+    }
+
+    main h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 4vh;
+        padding: 4vh 0;
+        width: 100%;
+    }
+    main.dark h3{
+        color: var(--title-dark);
+        border-bottom: var(--hr-dark);
+    }
+    main.light h3{
+        color: var(--title-lightr);
+        border-bottom: var(--hr-light);
+    }
+
+    /*******************************/
+    /*** Texto (etiquetas: p, li)***/
+    /*******************************/
+
+    main p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2.5vh;
+    }
+    main.dark p{
+        color: var(--text-dark);
+    }
+    main.light p{
+        color: var(--text-light);
+    }
+    main li{
+        /* list-style: none; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2.5vh;
+        margin-left: 2.5vh;
+
+    }
+    main.dark li{
+        color: var(--text-dark);
+    }
+    main.light li{
+        color: var(--text-light);
+    }
+}
+
+/* BIG LANDSCAPE > MODEL 5 ********************************************************************/
+@media screen and (min-height: 481px) and (min-width: 1025px) and (orientation: landscape){
+   
+    main{
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 2vh 4vw;
+    }
+
+    main h3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 4vh;
+        padding: 4vh 0;
+        width: 100%;
+    }
+    main.dark h3{
+        color: var(--title-dark);
+        border-bottom: var(--hr-dark);
+    }
+    main.light h3{
+        color: var(--title-lightr);
+        border-bottom: var(--hr-light);
+    }
+
+    /*******************************/
+    /*** Texto (etiquetas: p, li)***/
+    /*******************************/
+
+    main p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2.5vh;
+    }
+    main.dark p{
+        color: var(--text-dark);
+    }
+    main.light p{
+        color: var(--text-light);
+    }
+    main li{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 1vh 0;
+        font-size: 2.5vh;
+        margin-left: 2.5vh;
+
+    }
+    main.dark li{
+        color: var(--text-dark);
+    }
+    main.light li{
+        color: var(--text-light);
+    }
+}

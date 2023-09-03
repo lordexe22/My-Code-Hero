@@ -3,7 +3,7 @@ export default function IntroduccionJavaScript(){
 
     return(
         <>
-            <h2>IntroduccionJavaScript</h2>
+            <h3>IntroduccionJavaScript</h3>
         </>
     )
 }

@@ -1,0 +1,74 @@
+:root{
+    --bg-color-light: #00006620;
+    --default-color-light: #000044b0;
+    --border-light: thin solid #00004480;
+
+    --bg-color-dark: #8888ff20; 
+    --default-color-dark: #ddddffd0;
+    --border-dark: thin solid #ddddff80;
+}
+
+pre{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 1vh 0;
+    overflow-x: auto;
+    overscroll-behavior: contain;
+}
+    
+pre.dark{
+    background-color: var(--bg-color-dark);
+    border: var(--border-dark);
+}
+pre.light{
+    background-color: var(--bg-color-light);
+    border: var(--border-light);
+}
+
+pre.dark>code{
+    color:var(--default-color-dark);
+}
+pre.light>code{
+    color: var(--default-color-light);
+}
+
+
+/**********************************************************************************************/
+/******************** AJUSTES DE MEDIA QUIERIES PARA PC, TABLET Y CELULAR *********************/
+/**********************************************************************************************/
+
+/* SMALL PORTRAIT(VERTICAL) > MODEL 1 *********************************************************/
+@media screen and (max-width: 480px) and (orientation: portrait){
+    pre>code{
+        font-size: 1.8vh;
+    }
+}
+
+/* MEDIUM PORTRAIT(VERTICAL) > MODEL 2 ********************************************************/
+@media screen and (min-width: 481px) and (orientation: portrait){ 
+    pre>code{
+        font-size: 2vh;
+    }
+}
+
+/* SMALL LANDSCAPE(HORIZONTAL) > MODEL 3 ******************************************************/
+@media screen and (max-height: 480px) and (orientation: landscape){
+    pre>code{
+        font-size: 2.5vh;
+    }
+}
+
+/* MEDIUM LANDSCAPE(HORIZONTAL) > MODEL 4 *****************************************************/
+@media screen and (min-height: 481px) and (max-width: 1024px) and (orientation: landscape){
+    pre>code{
+        font-size: 2.2vh;
+    }
+}
+
+/* BIG LANDSCAPE > MODEL 5 ********************************************************************/
+@media screen and (min-height: 481px) and (min-width: 1025px) and (orientation: landscape){
+    pre>code{
+        font-size: 2vh;
+    }
+}

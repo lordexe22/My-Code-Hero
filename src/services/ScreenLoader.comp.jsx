@@ -12,10 +12,15 @@ import '../styles/logos.style.css';
 import '../styles/appContainer.style.css';
 
 // pages
-import Home from '../pages/Home.page.jsx'
+import Home from '../pages/Home.page.jsx';
+
+// stores
+import useTheme from "../store/useTheme.store.jsx";
+
+
 
 export default function ScreenLoader(){
-
+    const {globalTheme} = useTheme();
     return(
         <>
             <Router>
@@ -23,7 +28,7 @@ export default function ScreenLoader(){
                     <Route path="/My-Code-Hero/" element={<Home/>}/>
                     <Route path="/My-Code-Hero/*" 
                            element={
-                            <div id="app-container">
+                            <div id="app-container" className={globalTheme}>
                                 <AppHeader/>
                                 <AppNav/>
                                 <AppMain/>

@@ -1,0 +1,546 @@
+/* Contiene todos los estilos y en todas las medidas de todos los componentes alojados en el header */
+
+/***************************************/
+/*** Configuracion global del header ***/
+/***************************************/
+
+header{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+header, header *{
+    background-color: #00000000;
+}
+ 
+/* SMALL PORTRAIT(VERTICAL) > MODEL 1 *********************************************************/
+@media screen and (max-width: 480px) and (orientation: portrait){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 2.8vh;
+        --ico-size: 5.5vh;
+        --theme-ico-size: 5vh;
+    }
+
+    /********************************/
+    /*** Configuracion del header ***/
+    /********************************/
+
+    header{
+        grid-row: 1 / 2;
+    }    
+    header.light{
+        border-bottom: thin solid #00000050;
+    }
+    header.dark{
+        border-bottom: thin solid #ffffff50;
+    } 
+
+    /*************************************************************/
+    /*** Configuracion de la lista desplegable (tech selector) ***/
+    /*************************************************************/
+
+    .tech-selector{ /* Configuracion del tech actual */
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 65vw;
+        max-width: 65vw;
+        align-items: flex-start;
+        z-index: 2;
+    }
+    .tech-selector>.selected-tech{ /* Ajusto la posicion y tamaño del tech actual */
+        padding-left: 2vw;
+        min-height: 100%;
+    }
+    .tech-list{
+        transform: translateY(-2px);
+    }
+    .light>.tech-list{ /* Sombra del menu desplegable para el tema claro */
+        background-color: rgba(240,240,255,0.9);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dark>.tech-list{ /* Sombra del menu desplegable para el tema oscuro */
+        background-color: rgba(16,16,33,0.9);
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    }
+    .tech-list>.tech-option{ /* Ajuste de la lista de seleccion de techs */
+        min-width: 50vw;
+        padding-left: 2vw;
+    }
+    .tech-option>a{ /* Quita la decoracion de los enlaces */
+        text-decoration: none;
+    }
+    .logo>div{ /* Ajusta la fuente de los tech */
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 1vh;
+    }
+}
+/* MEDIUM PORTRAIT(VERTICAL) > MODEL 2 ********************************************************/
+@media screen and (min-width: 481px) and (orientation: portrait){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 3.5vh;
+        --ico-size: 6vh;
+        --theme-ico-size: 5vh;
+    }
+
+    /********************************/
+    /*** Configuracion del header ***/
+    /********************************/
+
+    header{
+        grid-row: 1 / 2;
+    }    
+    header.light{
+        border-bottom: thin solid #00000050;
+    }
+    header.dark{
+        border-bottom: thin solid #ffffff50;
+    } 
+
+    /*************************************************************/
+    /*** Configuracion de la lista desplegable (tech selector) ***/
+    /*************************************************************/
+
+    .tech-selector{ /* Configuracion del tech actual */
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 60vw;
+        max-width: 60vw;
+        align-items: flex-start;
+        z-index: 2;
+    }
+    .tech-selector>.selected-tech{ /* Ajusto la posicion y tamaño del tech actual */
+        padding-left: 2vw;
+        min-height: 100%;
+    }
+    .tech-list{
+        transform: translateY(-2px);
+    }
+    .light>.tech-list{ /* Sombra del menu desplegable para el tema claro */
+        background-color: rgba(240,240,255,0.9);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dark>.tech-list{ /* Sombra del menu desplegable para el tema oscuro */
+        background-color: rgba(16,16,33,0.9);
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    }
+    .tech-list>.tech-option{ /* Ajuste de la lista de seleccion de techs */
+        min-width: 50vw;
+        padding-left: 2vw;
+    }
+    .tech-option{
+        height: 7vh;
+    }
+    .tech-option>a{ /* Quita la decoracion de los enlaces */
+        text-decoration: none;
+    }
+    .logo>div{ /* Ajusta la fuente de los tech */
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 2vh;
+    }
+
+}
+/* SMALL LANDSCAPE(HORIZONTAL) > MODEL 3 ******************************************************/
+@media screen and (max-height: 480px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --ico-size: 10vh;
+        --theme-ico-size: 8vh;
+    }
+
+    /********************************/
+    /*** Configuracion del header ***/
+    /********************************/
+
+    header{
+        grid-area: 1 / 1 / 2 / 2;
+    }    
+    header.light{
+        border-bottom: thin solid #00000050;
+        border-right: thin solid #00000050;
+    }
+    header.dark{
+        border-bottom: thin solid #ffffff50;
+        border-right: thin solid #ffffff50;
+    }
+
+    /*************************************************************/
+    /*** Configuracion de la lista desplegable (tech selector) ***/
+    /*************************************************************/
+
+    .tech-selector{ /* Configuracion del tech actual */
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2;
+    }
+    .tech-selector>.selected-tech{ /* Ajusto la posicion y tamaño del tech actual */
+        min-height: 100%;
+        padding: 0 3vh;
+    }
+    .tech-list{
+        transform: translateY(-2px);
+    }
+    .light>.tech-list{ /* Sombra del menu desplegable para el tema claro */
+        background-color: rgba(240,240,255,0.9);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dark>.tech-list{ /* Sombra del menu desplegable para el tema oscuro */
+        background-color: rgba(16,16,33,0.9);
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    }
+    .tech-list>.tech-option{ /* Ajuste de la lista de seleccion de techs */
+        padding: 0 3vh;
+    }
+    .tech-option>a{ /* Quita la decoracion de los enlaces */
+        text-decoration: none;
+    }
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+   
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+
+}
+/* MEDIUM LANDSCAPE(HORIZONTAL) > MODEL 4 *****************************************************/
+@media screen and (min-height: 481px) and (max-width: 1024px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 5vh;
+        --ico-size: 8vh;
+        --theme-ico-size: 6vh;
+    }
+
+    /********************************/
+    /*** Configuracion del header ***/
+    /********************************/
+
+    header, header *{
+        background-color: #00000000;
+    }
+    header{
+        grid-area: 1 / 1 / 2 / 3;
+    }    
+    header.light{
+        border-bottom: thin solid #00000050;
+    }
+    header.dark{
+        border-bottom: thin solid #ffffff50;
+    }
+
+    /*************************************************************/
+    /*** Configuracion de la lista desplegable (tech selector) ***/
+    /*************************************************************/
+
+    .tech-selector{ /* Configuracion del tech actual */
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 50vw;
+        max-width: 50vw;
+        align-items: flex-start;
+        z-index: 2;
+    }
+    .tech-selector>.selected-tech{ /* Ajusto la posicion y tamaño del tech actual */
+        padding-left: 2vw;
+        min-height: 100%;
+    }
+    .tech-list{
+        transform: translateY(-2px);
+    }
+    .light>.tech-list{ /* Sombra del menu desplegable para el tema claro */
+        background-color: rgba(240,240,255,0.9);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dark>.tech-list{ /* Sombra del menu desplegable para el tema oscuro */
+        background-color: rgba(16,16,33,0.9);
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    }
+    .tech-list>.tech-option{ /* Ajuste de la lista de seleccion de techs */
+        min-width: 50vw;
+        padding-left: 2vw;
+    }
+    .tech-option{
+        height: 10vh;
+    }
+    .tech-option>a{ /* Quita la decoracion de los enlaces */
+        text-decoration: none;
+    }
+    .logo>div{ /* Ajusta la fuente de los tech */
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+
+}
+/* BIG LANDSCAPE > MODEL 5 *****************************************************/
+@media screen and (min-height: 481px) and (min-width: 1025px) and (orientation: landscape){
+
+    /******************/
+    /*** Constantes ***/
+    /******************/
+
+    :root{
+        --font-size: 5vh;
+        --ico-size: 8vh;
+        --theme-ico-size: 6vh;
+    }
+
+    /********************************/
+    /*** Configuracion del header ***/
+    /********************************/
+
+    header, header *{
+        background-color: #00000000;
+    }
+    header{
+        grid-area: 1 / 1 / 2 / 3;
+    }    
+    header.light{
+        border-bottom: thin solid #00000050;
+    }
+    header.dark{
+        border-bottom: thin solid #ffffff50;
+    }
+
+    /*************************************************************/
+    /*** Configuracion de la lista desplegable (tech selector) ***/
+    /*************************************************************/
+
+    .tech-selector{ /* Configuracion del tech actual */
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        min-width: 50vw;
+        max-width: 50vw;
+        align-items: flex-start;
+        z-index: 2;
+    }
+    .tech-selector>.selected-tech{ /* Ajusto la posicion y tamaño del tech actual */
+        padding-left: 2vw;
+        min-height: 100%;
+    }
+    .tech-list{
+        transform: translateY(-2px);
+    }
+    .light>.tech-list{ /* Sombra del menu desplegable para el tema claro */
+        background-color: rgba(240,240,255,0.9);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+    .dark>.tech-list{ /* Sombra del menu desplegable para el tema oscuro */
+        background-color: rgba(16,16,33,0.9);
+        box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
+    }
+    .tech-list>.tech-option{ /* Ajuste de la lista de seleccion de techs */
+        min-width: 50vw;
+        padding-left: 2vw;
+    }
+    .tech-option{
+        height: 10vh;
+    }
+    .tech-option>a{ /* Quita la decoracion de los enlaces */
+        text-decoration: none;
+    }
+    .logo>div{ /* Ajusta la fuente de los tech */
+        padding: 3vw;
+        font-size: var(--font-size)
+    }
+
+
+    /***************************************************************/
+    /*** Configuracion del boton selector de tema (claro/oscuro) ***/
+    /***************************************************************/
+    
+    .theme-button {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .theme-button>img{
+        background-color: #00000000;
+        height: var(--theme-ico-size);
+    }
+
+    /********************************************/
+    /*** Ajuste generales de todos los iconos ***/
+    /********************************************/
+
+    .logo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .logo>img{
+        height: var(--ico-size);
+    }
+
+    /*****************************************/
+    /*** Ajustes especificos de cada icono ***/
+    /*****************************************/
+
+    .logo-home-page>img{
+        padding-right: 3vh;
+    }
+}

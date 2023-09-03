@@ -2,17 +2,24 @@
  *  Por otro lado se carga el componente <TechSelector> que es el responsable de desplegar la lista    *
  *  con todas las tecnologias desarrolladas en la pagina.                                              */
 
-// modules
-import React, {useEffect} from "react";
+// stores
+import useTheme from '../store/useTheme.store.jsx';
 
 // styles
-import '../styles/header.style.css'
+import '../styles/header.style.css';
 
-export default function AppHeader(){
+// components
+import TechSelector from "./TechSelector.comp.jsx";
+import ThemeButton from "./ThemeButton.comp.jsx";
+import LogoHomePage from './LogoHomePage.comp.jsx';
 
+export default function AppHeader({model}){
+    const theme = useTheme().globalTheme;
     return(
-        <header>
-            <h2>Header</h2>
+        <header className={`${theme}`}>
+            <TechSelector model={model} theme={theme}/>
+            <ThemeButton/>            
+            <LogoHomePage/>
         </header>
     );
 }

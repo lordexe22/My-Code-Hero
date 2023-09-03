@@ -2,7 +2,7 @@
 
 // modules
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 // styles
 import '../styles/main.style.css'
@@ -21,27 +21,27 @@ export default function AppMain(){
         <main>
             <Routes>
                 {/* HTML pages */}
-                <Route path="html">
+                <Route path="/html" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionHtml/>}></Route>
                 </Route>
                 
                 {/* CSS pages */}
-                <Route path="css">
+                <Route path="/css" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionCss/>}></Route>
                 </Route>
 
                 {/* JavaScript pages */}
-                <Route path="javascript">
+                <Route path="/javascript" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionJavaScript/>}></Route>
                 </Route>
 
                 {/* TypeScript pages */}
-                <Route path="typescript">
+                <Route path="/typescript" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionTypeScript/>}></Route>
                 </Route>
 
                 {/* React Router Pager */}
-                <Route path="react-router">
+                <Route path="/react-router" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionReactRouter/>}></Route>
                 </Route>
 

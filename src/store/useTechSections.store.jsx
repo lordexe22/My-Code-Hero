@@ -16,6 +16,12 @@ const useTechSections = create((set)=>({
            {text: "Introducción", url: "introduccion"},
        ]},
     ],
+    "express": [
+        {"category":"Inicio",
+        "sections":[
+           {text: "Introducción", url: "introduccion"},
+       ]},
+    ],
     "git": [
         {"category":"Inicio",
         "sections":[
@@ -141,6 +147,12 @@ const useTechSections = create((set)=>({
         ]},
         {"category":"Plantillas de código",
         "sections":[
+       ]},
+    ],
+    "react-hook-form": [
+        {"category":"Inicio",
+        "sections":[
+           {text: "Introducción", url: "introduccion"},
        ]},
     ],
     setCurrentSection: (section) => {

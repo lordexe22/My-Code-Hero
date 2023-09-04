@@ -16,7 +16,9 @@ import useTechSections from '../store/useTechSections.store.jsx';
 
 // logos de las tecnologias desarrolladas
 import LogoReactRouter from './LogoReactRouter.comp.jsx';
+import LogoReactHookForm from './LogoReactHookForm.comp.jsx';
 import LogoHTML from './LogoHTML.comp.jsx';
+import LogoExpress from './LogoExpress.comp.jsx';
 import LogoCSS from './LogoCSS.comp.jsx'; 
 import LogoJS from './LogoJS.comp.jsx';
 import LogoTS from './LogoTS.comp.jsx';
@@ -28,10 +30,12 @@ export default function TechSelector({model}){
     const techOptions = [
         { url: 'html', component: <LogoHTML/> },
         { url: 'css', component: <LogoCSS/> },
+        { url: 'express', component: <LogoExpress/> },
         { url: 'git', component: <LogoGit/> },
         { url: 'javascript', component: <LogoJS/> },
         { url: 'typescript', component: <LogoTS/> },
         { url: 'react-router', component: <LogoReactRouter/> },
+        { url: 'react-hook-form', component: <LogoReactHookForm/> },
     ];
 
     // Store para procesar informacion sobre la url del tech actual

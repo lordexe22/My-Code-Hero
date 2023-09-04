@@ -272,7 +272,7 @@ nav, nav *{
 
     nav{
         grid-area: 2 / 1 / 3 / 2;
-        overflow: scroll;
+        overflow-y: auto;
         padding: 2vh 2vw;
     }    
     nav.light{

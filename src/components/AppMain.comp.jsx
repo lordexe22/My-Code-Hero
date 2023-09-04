@@ -17,7 +17,11 @@ import IntroduccionReactRouter from "../pages/React-Router/Introduccion_ReactRou
 import InstalacionReactRouter from "../pages/React-Router/Instalacion_ReactRouter.page";
 import EstructuraBasicaReactRouter from "../pages/React-Router/EstructuraBasica_ReactRouter.page";
 // git pages
-import IntroduccionGit from "../pages/Git/IntroduccionGit.page";
+import IntroduccionGit from "../pages/Git/Introduccion_Git.page";
+// react hook form pages
+import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_ReactHookForm.page";
+// express pages
+import IntroduccionExpress from "../pages/Express/IntroduccionExpress.page";
 
 // store
 import useTheme from '../store/useTheme.store.jsx';
@@ -36,6 +40,12 @@ export default function AppMain(){
                 {/* CSS pages */}
                 <Route path="/css" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionCss/>}></Route>
+                    
+                </Route>
+
+                {/* Express pages */}
+                <Route path="/express" element={<Outlet/>}>
+                    <Route path="introduccion" element={<IntroduccionExpress/>}></Route>
                 </Route>
 
                 {/* git pages */}
@@ -58,6 +68,11 @@ export default function AppMain(){
                     <Route path="introduccion" element={<IntroduccionReactRouter/>}></Route>
                     <Route path="instalacion" element={<InstalacionReactRouter/>}></Route>
                     <Route path="estructura-basica" element={<EstructuraBasicaReactRouter/>}></Route>
+                </Route>
+
+                {/* React Hook Form pages */}
+                <Route path="/react-hook-form" element={<Outlet/>}>
+                    <Route path="introduccion" element={<IntroduccionReactHookForm/>}></Route>
                 </Route>
 
             </Routes>

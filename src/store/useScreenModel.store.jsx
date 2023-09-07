@@ -3,14 +3,14 @@
 import { create } from 'zustand';
 
 const useScreenModel = create((set)=>({
-    "model": null,
+    "model": 'null',
     setScreenModel: (model) => set({ model })
 }))
 
 const handleResize = () => {
     
     const { setScreenModel } = useScreenModel.getState();
-    const width = window.innerWidth;
+    const width = window.outerWidth;
     const height = window.outerHeight;
     const portrait = width<height;
     const landscape = width>height;

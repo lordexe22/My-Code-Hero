@@ -543,4 +543,10 @@ header, header *{
     .logo-home-page>img{
         padding-right: 3vh;
     }
+
+    /* Espacio entre el ícono y el texto en el tech selector*/
+    .tech-selector > div > div > div,
+    .tech-selector.displayed > div.tech-list > div > a > div > div{
+        padding: 1vw;
+    }
 }

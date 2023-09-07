@@ -24,6 +24,9 @@ export default function AppHeader(){
             <TechSelector model={model} theme={theme}/>
             <ThemeButton/>            
             <LogoHomePage/>
+            {/* m: {model} <br /> */}
+            {/* h: {window.outerHeight} <br /> */}
+            {/* w: {window.outerWidth} */}
         </header>
     );
 }

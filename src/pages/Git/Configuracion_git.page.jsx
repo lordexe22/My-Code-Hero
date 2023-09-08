@@ -9,8 +9,8 @@ export default function ConfiguracionGit(){
     const { globalTheme } = useTheme();
 
     // Codigos
-    const code1 = `$ git config --global user.name "Tu Nombre"
-$ git config --global user.email "tu@email.com"`;
+    const code1 = `git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"`;
 
     const code2 = `git config --global core.editor "core --wait"`;
 

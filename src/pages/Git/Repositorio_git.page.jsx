@@ -9,25 +9,25 @@ export default function RepositorioGit(){
     const { globalTheme } = useTheme();
 
     // Codigos
-    const code1 = `$ git init`;
+    const code1 = `git init`;
 
     const code2 = `# se inicia el proyecto en git
-$ git init 
+git init 
 
 # se agregan todos los cambios detectados al 'staging area'
-$ git add . 
+git add . 
 
 # se ejecuta el primer commit del proyecto 
-$ git commit -m "Subiendo el repositorio a git-hub" 
+git commit -m "Subiendo el repositorio a git-hub" 
 
 # se crea la rama main
-$ git branch -M main 
+git branch -M main 
 
 # se indica la url de nuestro repositorio remoto 
-$ git remote add origin https://github.com/lordexe22/Resumen.git
+git remote add origin https://github.com/lordexe22/Resumen.git
 
 # se envia el contenido del repositorio local hacia el repositorio remoto
-$ git push -u origin main
+git push -u origin main
 `;
 
 

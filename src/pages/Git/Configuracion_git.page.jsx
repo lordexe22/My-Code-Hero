@@ -22,8 +22,6 @@ git config --global user.email "tu@email.com"`;
 
     const code6 = `git config --global user.password "código del token`;
     
-
-
     return(
         <>
             <h3>Configuración</h3>

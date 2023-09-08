@@ -9,7 +9,7 @@ export default function StagingAreaGit(){
     const { globalTheme } = useTheme();
 
     // Codigos
-    const code1 = `git add ejemplo.txt`;
+    const code1 = `git add "/c/projects/my project/ejemplo.txt"`;
 
     const code2 = `git add .`;
 

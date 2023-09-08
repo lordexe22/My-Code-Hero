@@ -30,7 +30,6 @@ git remote add origin https://github.com/lordexe22/Resumen.git
 git push -u origin main
 `;
 
-
 return(
         <>
             <h3>Repositorio</h3>

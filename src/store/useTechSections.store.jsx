@@ -29,8 +29,14 @@ const useTechSections = create((set)=>({
             {text: "Instalación", url: "instalacion"},
             {text: "Configuración", url: "configuracion"},
             {text: "Repositorio", url: "repositorio"},
+            {text: "Colaboradores", url: "colaboradores"},
             {text: "Glosario (P)", url: "glosario"},
        ]},
+        {"category":"Comandos básicos",
+        "sections":[
+            {text: "1- Staging area", url: "staging-area"},
+            {text: "2- Commit", url: "commit"},
+        ]},
     ],
     "javascript": [
         {"category":"Inicio",

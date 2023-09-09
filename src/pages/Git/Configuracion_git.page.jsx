@@ -65,13 +65,13 @@ git config --global user.email "tu@email.com"`;
             </p>
 
             <div style={{textAlign:'center', margin:'2vh 0'}}>
-                <img style={{width:'100%'}} src="/My-Code-Hero/git-configuracion-1.jpg" alt="git-configuracion-1.jpg"/>
+                <img style={{width:'min(auto, 100%)'}} src="/My-Code-Hero/git-configuracion-1.jpg" alt="git-configuracion-1.jpg"/>
             </div>
 
             <p>Al hacer esto se da un código como el que se ve en el item con fondo verde.</p>
 
             <div style={{textAlign:'left', margin:'2vh 0'}}>
-                <img style={{width:'80%'}} src="/My-Code-Hero/git-configuracion-2.jpg" alt="git-configuracion-2.jpg"/>
+                <img style={{width:'auto'}} src="/My-Code-Hero/git-configuracion-2.jpg" alt="git-configuracion-2.jpg"/>
             </div>
 
             <p>Para finalizar vamos a configurar nuestra contraseña de usuario que no es otra cosa que el código que se nos ha proporcionado en el token, para esto nos dirigimos a git-bash y ejecutamos el comando:</p>

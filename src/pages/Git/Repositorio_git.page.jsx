@@ -70,7 +70,7 @@ return(
             <p>El primer paso va a ser crear un repositorio remoto en git-hub, para ello debemos acceder al perfil de usuario, seleccionamos la sección <b>"Repositories"</b> y dentro de esta damos click a <b>"New"</b>. A continuación se nos va a abrir un menu donde podemos rellenar los datos del repositorio, en el nombre se pone el nombre del proyecto creado en la PC, el resto de los campos son opcionales. Una vez creado, se nos indican las distintas formas en las cuales podemos subir nuestro repositorio local a git-hub y por defecto se muestra la siguiente imagen:</p>
 
             <div style={{textAlign:'center', margin:'2vh 0'}}>
-                <img style={{width:'100%'}} src="/My-Code-Hero/git-repositorio-1.jpg" alt="git-repositorio-1.jpg"/>
+                <img style={{width:'min(auto, 100%)'}} src="/My-Code-Hero/git-repositorio-1.jpg" alt="git-repositorio-1.jpg"/>
             </div>
 
             <p>Si previamente no hemos realizado ningún commit en nuestro proyecto, deberiamos ejecutar las siguientes instrucciones para sincronizar nuestro repositorio local con el repositorio remoto:</p>
@@ -82,7 +82,7 @@ return(
             <p>Si todo ha resultado correcto, entonces al actualizar la página del repositorio remoto se deberia ver el contenido del repositorio local.</p>
 
             <div style={{textAlign:'center', margin:'2vh 0'}}>
-                <img style={{width:'100%'}} src="/My-Code-Hero/git-repositorio-2.jpg" alt="git-repositorio-2.jpg"/>
+                <img style={{width:'min(auto, 100%)'}} src="/My-Code-Hero/git-repositorio-2.jpg" alt="git-repositorio-2.jpg"/>
             </div>
 
        </>

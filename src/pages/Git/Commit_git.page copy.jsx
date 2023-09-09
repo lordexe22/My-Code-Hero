@@ -52,7 +52,7 @@ return(
             <BeautifullCode code={code2} theme={globalTheme}></BeautifullCode>
 
             <div style={{textAlign:'left', margin:'2vh 0'}}>
-                <img style={{width:'60%'}} src="/My-Code-Hero/git-commit-1.jpg" alt="git-commit-1.jpg"/>
+                <img style={{width:'auto'}} src="/My-Code-Hero/git-commit-1.jpg" alt="git-commit-1.jpg"/>
             </div>
 
             <p>Al ejecutar este comando se nos muestra en la terminal una lista con todos los commits del proyecto, y de cada uno de ellos se muestra la rama desde la cual se ha realizado el commit, su identificador <b>"SHA"</b>, los datos del autor, la fecha del commit y el mensaje descriptivo.</p>

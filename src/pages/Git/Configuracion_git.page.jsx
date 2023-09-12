@@ -64,14 +64,14 @@ git config --global user.email "tu@email.com"`;
                 Ya adentro podremos generar un token para trabajar, podemos darle al mismo una descripcion y una fecha de expiración. Para finalizar la acción tildamos la casilla repo, bajamos hasta el final y damos click en <b>Generate token</b>. 
             </p>
 
-            <div style={{textAlign:'center', margin:'2vh 0'}}>
-                <img style={{width:'min(auto, 100%)'}} src="/My-Code-Hero/git-configuracion-1.jpg" alt="git-configuracion-1.jpg"/>
+            <div style={{textAlign:'left', margin:'2vh 0'}}>
+                <img src="/My-Code-Hero/git-configuracion-1.jpg" alt="git-configuracion-1.jpg"/>
             </div>
 
             <p>Al hacer esto se da un código como el que se ve en el item con fondo verde.</p>
 
             <div style={{textAlign:'left', margin:'2vh 0'}}>
-                <img style={{width:'auto'}} src="/My-Code-Hero/git-configuracion-2.jpg" alt="git-configuracion-2.jpg"/>
+                <img src="/My-Code-Hero/git-configuracion-2.jpg" alt="git-configuracion-2.jpg"/>
             </div>
 
             <p>Para finalizar vamos a configurar nuestra contraseña de usuario que no es otra cosa que el código que se nos ha proporcionado en el token, para esto nos dirigimos a git-bash y ejecutamos el comando:</p>

@@ -1,0 +1,12 @@
+.tech-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila */
+    gap: 10px; /* Espacio entre los elementos */
+  }
+  
+  .tech-item {
+    border: 1px solid #ccc; /* Borde para cada elemento (puedes personalizarlo) */
+    padding: 10px; /* Espaciado interno de cada elemento (puedes personalizarlo) */
+    text-align: center; /* Centra el contenido en cada elemento */
+  }
+  

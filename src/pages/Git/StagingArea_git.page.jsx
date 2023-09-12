@@ -50,7 +50,7 @@ return(
             <p>Se nos mostrará algo parecido a lo siguiente en la consola:</p>
 
             <div style={{textAlign:'left', margin:'2vh 0'}}>
-                <img style={{width:'auto'}} src="/My-Code-Hero/git-stagingArea-1.jpg" alt="git-stagingArea-1.jpg"/>
+                <img src="/My-Code-Hero/git-stagingArea-1.jpg" alt="git-stagingArea-1.jpg"/>
             </div>
 
             <p>Podemos distinguir las siguiente caracteristicas:</p>

@@ -61,6 +61,10 @@ main.light a{
 main *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+img{
+    max-width: 100%;
+    width: auto;
+}
 
 /**********************************************************************************************/
 /******************** AJUSTES DE MEDIA QUIERIES PARA PC, TABLET Y CELULAR *********************/

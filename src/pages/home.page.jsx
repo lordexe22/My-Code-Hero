@@ -38,17 +38,19 @@ export default function Home(){
     }
 
     return(
-        <div>
+        <>
             <h2>Bienvenido</h2>
             <ThemeButton/>
-            <div onClick={() => clickHandler('html')}><LogoHTML/></div>
-            <div onClick={() => clickHandler('css')}><LogoCSS/></div>
-            <div onClick={() => clickHandler('express')}><LogoExpress/></div>
-            <div onClick={() => clickHandler('git')}><LogoGit/></div>
-            <div onClick={() => clickHandler('javascript')}><LogoJS/></div>
-            <div onClick={() => clickHandler('typescript')}><LogoTS/></div>
-            <div onClick={() => clickHandler('react-router')}><LogoReactRouter/></div>
-            <div onClick={() => clickHandler('react-hook-form')}><LogoReactHookForm/></div>
-        </div>
+            <div className="tech-container">
+                <div className="tech-item" onClick={() => clickHandler('html')}><LogoHTML/></div>
+                <div className="tech-item" onClick={() => clickHandler('css')}><LogoCSS/></div>
+                <div className="tech-item" onClick={() => clickHandler('express')}><LogoExpress/></div>
+                <div className="tech-item" onClick={() => clickHandler('git')}><LogoGit/></div>
+                <div className="tech-item" onClick={() => clickHandler('javascript')}><LogoJS/></div>
+                <div className="tech-item" onClick={() => clickHandler('typescript')}><LogoTS/></div>
+                <div className="tech-item" onClick={() => clickHandler('react-router')}><LogoReactRouter/></div>
+                <div className="tech-item" onClick={() => clickHandler('react-hook-form')}><LogoReactHookForm/></div>
+            </div>
+        </>
     );
 }

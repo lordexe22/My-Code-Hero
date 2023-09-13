@@ -15,7 +15,7 @@ export default function RepositorioRemotoGit(){
 
     const code3 = `git remote add origin https://github.com/lordexe22/My-Code-Hero.git`;
 
-    const code4 = `git push <nombre-del-repositorio-remoto> <nombre-rama>`;
+    const code4 = `git push <nombre-de-la-referencia> <nombre-rama>`;
 
     const code5 = `git push origin master`;
 
@@ -24,11 +24,13 @@ export default function RepositorioRemotoGit(){
     const code7 = `git push origin master
 git push origin master:master`;
 
-    const code8 = ``;
-    const code9 = ``;
-    const code10 = ``;
-    const code11 = ``;
-    const code12 = ``;
+    const code8 = `git pull <nombre-de-la-referencia> <nombre-rama>`;
+
+    const code9 = `git pull <nombre-de-la-referencia> <rama-remota>:<rama-local>`;
+
+    const code10 = `git clone <URL-del-repositorio-remoto>`;
+
+    const code11 = `git clone https://github.com/lordexe22/My-Code-Hero.git`;
 
 
 
@@ -67,7 +69,7 @@ return(
 
             <p>Aqui se hace un envio (push) desde el repositorio local hacia el repositorio remoto al cual apunta la variable de referencia <b>"origin"</b>. El contenido enviado es todo lo que se encuentre dentro del último commit de la rama <b>"master"</b> y dicho contenido es enviado a la rama <b>"master"</b> en el repositorio remoto.</p>
 
-            <p>Si usamos el código en este formato se espera que la rama especificada exista tanto en el repositorio local como en el repositorio remoto. Sin embargo, si se desea especificar tanto la rama del repositorio local como la rama del repositorio remoto, podriamos usar el comando de la siguiente forma:</p>
+            <p>Si usamos el código en este formato se espera que la rama especificada exista tanto en el repositorio local como en el repositorio remoto, de no ser así la rama especificada será creada en el repositorio remoto. Sin embargo, si se desea especificar tanto la rama del repositorio local como la rama del repositorio remoto, podriamos usar el comando de la siguiente forma:</p>
 
             <BeautifullCode code={code6} theme={globalTheme}></BeautifullCode>
 
@@ -76,7 +78,27 @@ return(
 
             <BeautifullCode code={code7} theme={globalTheme}></BeautifullCode>
 
-            <p>Más alla del formato elegido, al ejecutar el comando <b><code>"push"</code></b> va a ser enviado hacia el repositorio remoto y al actualizar la url del mismo se podrá observar el contenido actualizado.</p>
+            <p>Más alla del formato elegido, al ejecutar el comando <b><code>"push"</code></b> el commit va a ser enviado hacia el repositorio remoto y al actualizar la url del mismo se podrá observar el contenido actualizado.</p>
+
+            <h4>Actualizar el repositorio local (pull)</h4>
+
+            <p>El comando <b><code>"pull"</code></b> se emplea cuando deseamos actualizar el repositorio local a partir del contenido del repositorio remoto. Esto es especialmente útil en trabajos de equipo en los cuales el repositorio remoto recibe actualizaciones constantemente. En este contexto, es recomendable actualizar el repositorio local para que al enviar un <b><code>"push"</code></b> la versión del commit enviada este actualizada. La sintaxis general es identica al comando push:</p>
+
+            <BeautifullCode code={code8} theme={globalTheme}></BeautifullCode>
+
+            <p>También admite el manejo de ambas ramas invirtiendo el orden de las ramas con el siguiente formato:</p>
+
+            <BeautifullCode code={code9} theme={globalTheme}></BeautifullCode>
+
+            <h4>Clonar repositorio remoto (clone)</h4>
+
+            <p>Git ofrece la posibilidad de clonar un repositorio remoto con el comando <b><code>"git clone"</code></b> seguido de la URL del repositorio. Es importante mencionar que no acepta como parámetro la referencia origin ni ninguna otra por lo cual se debe usar especificamente la URL del repositorio remoto. </p>
+
+            <BeautifullCode code={code10} theme={globalTheme}></BeautifullCode>
+
+            <p>Esto suele ser útil cuando se acaba de comenzar como colaborador en un proyecto. Ejecutar el comando va a crear una carpeta con el nombre del repositorio y todo su contenido. Como ejemplo, si se desea clonar este repositorio se deberia usar el comando:</p>
+
+            <BeautifullCode code={code11} theme={globalTheme}></BeautifullCode>
 
             {/* <BeautifullCode code={code1} theme={globalTheme}></BeautifullCode> */}
 

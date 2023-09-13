@@ -32,11 +32,12 @@ const useTechSections = create((set)=>({
             {text: "Colaboradores", url: "colaboradores"},
             {text: "Glosario (P)", url: "glosario"},
        ]},
-        {"category":"Comandos básicos",
+        {"category":"Conceptos básicos",
         "sections":[
-            {text: "1- Staging area", url: "staging-area"},
-            {text: "2- Commit", url: "commit"},
-            {text: "3- Branches (ramas)", url: "branches"},
+            {text: "Staging area", url: "staging-area"},
+            {text: "Commit", url: "commit"},
+            {text: "Branches", url: "branches"},
+            {text: "Tags", url: "tags"},
         ]},
     ],
     "javascript": [

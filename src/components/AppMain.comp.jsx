@@ -20,14 +20,15 @@ import IntroduccionReactRouter from "../pages/React-Router/Introduccion_reactRou
 import InstalacionReactRouter from "../pages/React-Router/Instalacion_reactRouter.page.jsx";
 import EstructuraBasicaReactRouter from "../pages/React-Router/EstructuraBasica_reactRouter.page.jsx";
 // pages git
-import IntroduccionGit from "../pages/Git/Introduccion_git.page.jsx";
-import InstalacionGit from "../pages/Git/Instalacion_git.page.jsx";
-import ConfiguracionGit from "../pages/Git/Configuracion_git.page.jsx";
-import RepositorioGit from "../pages/Git/Repositorio_git.page.jsx";
-import ColaboradoresGit from "../pages/Git/Colaboradores_git.page.jsx";
+import IntroduccionGit from "../pages/Git/Introduccion_git.page";
+import InstalacionGit from "../pages/Git/Instalacion_git.page";
+import ConfiguracionGit from "../pages/Git/Configuracion_git.page";
+import RepositorioGit from "../pages/Git/Repositorio_git.page";
+import ColaboradoresGit from "../pages/Git/Colaboradores_git.page";
 import StagingAreaGit from "../pages/Git/StagingArea_git.page";
-import CommitGit from "../pages/Git/Commit_git.page copy";
-import BranchesGit from "../pages/Git/Branches_git.page copy";
+import CommitGit from "../pages/Git/Commit_git.page";
+import BranchesGit from "../pages/Git/Branches_git.page";
+import TagsGit from "../pages/Git/Tags_git.page";
 // pages react hook form
 import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_reactHookForm.page.jsx";
 // pages express
@@ -68,6 +69,7 @@ export default function AppMain(){
                     <Route path="staging-area" element={<StagingAreaGit/>}></Route>
                     <Route path="commit" element={<CommitGit/>}></Route>
                     <Route path="branches" element={<BranchesGit/>}></Route>
+                    <Route path="tags" element={<TagsGit/>}></Route>
                 </Route>
 
                 {/* JavaScript pages */}

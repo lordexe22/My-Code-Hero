@@ -13,7 +13,7 @@ export default function BranchesGit(){
 
     const code2 = `git checkout "new-widget"`;
 
-    const code3 = `git checkout -d "test"`;
+    const code3 = `git checkout -b "test"`;
 
     const code4 = `git branch`;
 

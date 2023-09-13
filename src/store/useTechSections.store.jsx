@@ -36,6 +36,7 @@ const useTechSections = create((set)=>({
         "sections":[
             {text: "Staging area", url: "staging-area"},
             {text: "Commit", url: "commit"},
+            {text: "Repositorio remoto", url: "repositorio-remoto"},
             {text: "Branches", url: "branches"},
             {text: "Tags", url: "tags"},
         ]},

@@ -27,6 +27,7 @@ import RepositorioGit from "../pages/Git/Repositorio_git.page";
 import ColaboradoresGit from "../pages/Git/Colaboradores_git.page";
 import StagingAreaGit from "../pages/Git/StagingArea_git.page";
 import CommitGit from "../pages/Git/Commit_git.page";
+import RepositorioRemotoGit from "../pages/Git/RepositorioRemoto_git.page";
 import BranchesGit from "../pages/Git/Branches_git.page";
 import TagsGit from "../pages/Git/Tags_git.page";
 // pages react hook form
@@ -68,6 +69,7 @@ export default function AppMain(){
                     <Route path="colaboradores" element={<ColaboradoresGit/>}></Route>
                     <Route path="staging-area" element={<StagingAreaGit/>}></Route>
                     <Route path="commit" element={<CommitGit/>}></Route>
+                    <Route path="repositorio-remoto" element={<RepositorioRemotoGit/>}></Route>
                     <Route path="branches" element={<BranchesGit/>}></Route>
                     <Route path="tags" element={<TagsGit/>}></Route>
                 </Route>

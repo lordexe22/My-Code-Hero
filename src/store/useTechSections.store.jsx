@@ -167,7 +167,56 @@ const useTechSections = create((set)=>({
         "sections":[
            {text: "Introducción", url: "introduccion"},
            {text: "Instalación", url: "instalacion"},
-       ]},
+        ]},
+        {"category":"Primeros pasos",
+        "sections":[
+            {text: "Introducción", url: "introduccion"},
+        ]},
+        {"category":"useForm",
+        "sections":[
+           {text: "useForm", url: "useForm"},
+           {text: "register", url: "register"},
+           {text: "unregister", url: "unregister"},
+           {text: "formState", url: "formState"},
+           {text: "watch", url: "watch"},
+           {text: "handleSubmit", url: "handleSubmit"},
+           {text: "reset", url: "reset"},
+           {text: "resetField", url: "resetField"},
+           {text: "setError", url: "setError"},
+           {text: "clearErrors", url: "clearErrors"},
+           {text: "setValue", url: "setValue"},
+           {text: "setFocus", url: "setFocus"},
+           {text: "getValues", url: "getValues"},
+           {text: "getFieldState", url: "getFieldState"},
+           {text: "trigger", url: "trigger"},
+           {text: "control", url: "control"},
+           {text: "Form", url: "Form"},
+        ]},
+        {"category":"useController",
+        "sections":[
+           {text: "useController", url: "useController"},
+           {text: "Controller", url: "Controller"},
+        ]},
+        {"category":"useFormContext",
+        "sections":[
+           {text: "useFormContext", url: "useFormContext"},
+           {text: "formProvider", url: "formProvider"},
+        ]},
+        {"category":"useWatch",
+        "sections":[
+            {text: "useWatch", url: "useWatch"},
+        ]},
+        {"category":"useFormState",
+        "sections":[
+            {text: "useFormState", url: "useFormState"},
+            {text: "ErrorMessage", url: "ErrorMessage"},
+        ]},
+        {"category":"useFieldArray",
+        "sections":[
+            {text: "useFieldArray", url: "useFieldArray"},
+        ]},
+      
+      
     ],
     setCurrentSection: (section) => {
         set({ currentSection: section });

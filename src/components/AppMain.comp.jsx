@@ -31,7 +31,8 @@ import RepositorioRemotoGit from "../pages/Git/RepositorioRemoto_git.page";
 import BranchesGit from "../pages/Git/Branches_git.page";
 import TagsGit from "../pages/Git/Tags_git.page";
 // pages react hook form
-import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_reactHookForm.page.jsx";
+import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_ReactHookForm.page";
+import InstalacionReactHookForm from "../pages/React-Hook-Form/Instalacion_ReactHookForm.page";
 // pages express
 import IntroduccionExpress from "../pages/Express/Introduccion_express.page.jsx";
 
@@ -94,6 +95,7 @@ export default function AppMain(){
                 {/* React Hook Form pages */}
                 <Route path="/react-hook-form" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionReactHookForm/>}></Route>
+                    <Route path="instalacion" element={<InstalacionReactHookForm/>}></Route>
                 </Route>
 
             </Routes>

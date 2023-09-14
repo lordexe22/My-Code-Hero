@@ -166,6 +166,7 @@ const useTechSections = create((set)=>({
         {"category":"Inicio",
         "sections":[
            {text: "Introducción", url: "introduccion"},
+           {text: "Instalación", url: "instalacion"},
        ]},
     ],
     setCurrentSection: (section) => {

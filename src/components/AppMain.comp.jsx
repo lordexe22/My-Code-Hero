@@ -33,6 +33,7 @@ import TagsGit from "../pages/Git/Tags_git.page";
 // pages react hook form
 import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_ReactHookForm.page";
 import InstalacionReactHookForm from "../pages/React-Hook-Form/Instalacion_ReactHookForm.page";
+import FormularioBasicoReactHookForm from "../pages/React-Hook-Form/FormularioBasico_ReactHookForm.page";
 // pages express
 import IntroduccionExpress from "../pages/Express/Introduccion_express.page.jsx";
 
@@ -96,6 +97,7 @@ export default function AppMain(){
                 <Route path="/react-hook-form" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionReactHookForm/>}></Route>
                     <Route path="instalacion" element={<InstalacionReactHookForm/>}></Route>
+                    <Route path="formulario-basico" element={<FormularioBasicoReactHookForm/>}></Route>
                 </Route>
 
             </Routes>

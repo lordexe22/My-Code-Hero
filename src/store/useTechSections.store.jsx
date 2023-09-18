@@ -170,7 +170,7 @@ const useTechSections = create((set)=>({
         ]},
         {"category":"Primeros pasos",
         "sections":[
-            {text: "Introducción", url: "introduccion"},
+            {text: "Formulario básico", url: "formulario-basico"},
         ]},
         {"category":"useForm",
         "sections":[

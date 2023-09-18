@@ -5,7 +5,7 @@ export default function InstalacionGit(){
         <>
             <h3>Instalación</h3>   
 
-            <p>Podemos acceder a la pagina de descarga desde el siguiente enlace: <a href=" https://git-scm.com/downloads" target="_blank">
+            <p>Podemos acceder a la página de descarga desde el siguiente enlace: <a href=" https://git-scm.com/downloads" target="_blank">
             https://git-scm.com/downloads</a>.
             </p>
             <p>

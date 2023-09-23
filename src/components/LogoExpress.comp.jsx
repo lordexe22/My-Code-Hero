@@ -21,7 +21,7 @@ export default function LogoExpress(){
         : 
         <div className="logo logo-express">
             <img src="/My-Code-Hero/express-icon.jpg" alt="logo express"/>
-            <div style={logoStyle}>Express</div>
+            <div style={logoStyle}>Express 4.x</div>
         </div>
     );
 }

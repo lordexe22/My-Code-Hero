@@ -20,8 +20,9 @@ const useTechSections = create((set)=>({
         {"category":"Inicio",
         "sections":[
             {text: "Introducción", url: "introduccion"},
-            {text: "Instalación", url: "instalcion"},
-            {text: "Programa básico", url: "programa-basico"},
+            {text: "Instalación", url: "instalacion"},
+            {text: "Conceptos básicos", url: "conceptos-basicos"},
+            {text: "Estructura básica", url: "estructura-basica"},
        ]},
        {"category":"express()",
        "sections":[

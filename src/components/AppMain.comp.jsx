@@ -36,6 +36,9 @@ import InstalacionReactHookForm from "../pages/React-Hook-Form/Instalacion_React
 import FormularioBasicoReactHookForm from "../pages/React-Hook-Form/FormularioBasico_ReactHookForm.page";
 // pages express
 import IntroduccionExpress from "../pages/Express/Introduccion_express.page.jsx";
+import InstalacionExpress from "../pages/Express/Instalacion_express.page";
+import ConceptosBasicosExpress from "../pages/Express/ConceptosBasicos_express.page";
+import EstructuraBasicaExpress from "../pages/Express/EstructuraBasica_express.page";
 
 // store
 import useTheme from '../store/useTheme.store.jsx';
@@ -60,6 +63,9 @@ export default function AppMain(){
                 {/* Express pages */}
                 <Route path="/express" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionExpress/>}></Route>
+                    <Route path="instalacion" element={<InstalacionExpress/>}></Route>
+                    <Route path="conceptos-basicos" element={<ConceptosBasicosExpress/>}></Route>
+                    <Route path="estructura-basica" element={<EstructuraBasicaExpress/>}></Route>
                 </Route>
 
                 {/* git pages */}

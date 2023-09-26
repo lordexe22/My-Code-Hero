@@ -43,7 +43,7 @@ import BranchesGit from "../pages/Git/Branches_git.page";
 import TagsGit from "../pages/Git/Tags_git.page";
 
 // pages mongoDB
-
+import IntroduccionMongoDB from "../pages/MongoDB/Introduccion_MongoDB.page";
 
 // pages mongoose
 import IntroduccionMongoose from "../pages/Mongoose/Introduccion_Mongoose.page";
@@ -107,7 +107,12 @@ export default function AppMain(){
                     <Route path="introduccion" element={<IntroduccionTypeScript/>}></Route>
                 </Route> */}
 
-                {/* TypeScript pages */}
+                {/* MongoDB pages */}
+                <Route path="/mongoDB" element={<Outlet/>}>
+                    <Route path="introduccion" element={<IntroduccionMongoDB/>}></Route>
+                </Route>
+
+                {/* Mongoose pages */}
                 <Route path="/mongoose" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionMongoose/>}></Route>
                     <Route path="instalacion" element={<InstalacionMongoose/>}></Route>

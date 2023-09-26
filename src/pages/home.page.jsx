@@ -8,6 +8,7 @@ import LogoTS from "../components/LogoTS.comp";
 import LogoReactRouter from "../components/LogoReactRouter.comp";
 import LogoReactHookForm from "../components/LogoReactHookForm.comp";
 import ThemeButton from "../components/ThemeButton.comp";
+import LogoMongoDB from "../components/LogoMongoDB.comp";
 import LogoMongoose from "../components/LogoMongoose.comp";
 
 
@@ -47,6 +48,7 @@ export default function Home(){
                 {/* <div className="tech-item" onClick={() => clickHandler('css')}><LogoCSS/></div> */}
                 <div className="tech-item" onClick={() => clickHandler('express')}><LogoExpress/></div>
                 <div className="tech-item" onClick={() => clickHandler('git')}><LogoGit/></div>
+                <div className="tech-item" onClick={() => clickHandler('mongoDB')}><LogoMongoDB/></div>
                 <div className="tech-item" onClick={() => clickHandler('mongoose')}><LogoMongoose/></div>
                 {/* <div className="tech-item" onClick={() => clickHandler('javascript')}><LogoJS/></div> */}
                 {/* <div className="tech-item" onClick={() => clickHandler('typescript')}><LogoTS/></div> */}

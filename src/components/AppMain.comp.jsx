@@ -42,9 +42,13 @@ import RepositorioRemotoGit from "../pages/Git/RepositorioRemoto_git.page";
 import BranchesGit from "../pages/Git/Branches_git.page";
 import TagsGit from "../pages/Git/Tags_git.page";
 
+// pages mongoDB
+
+
 // pages mongoose
 import IntroduccionMongoose from "../pages/Mongoose/Introduccion_Mongoose.page";
 import InstalacionMongoose from "../pages/Mongoose/Instalacion_Mongoose.page";
+import EstructuraBasicaMongoose from "../pages/Mongoose/EstructuraBasica_Mongoose.page";
 
 // pages react hook form
 import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_ReactHookForm.page";
@@ -107,6 +111,7 @@ export default function AppMain(){
                 <Route path="/mongoose" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionMongoose/>}></Route>
                     <Route path="instalacion" element={<InstalacionMongoose/>}></Route>
+                    <Route path="estructura-basica" element={<EstructuraBasicaMongoose/>}></Route>
                 </Route>
 
                 {/* React Router Pager */}

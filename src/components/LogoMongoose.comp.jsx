@@ -10,7 +10,8 @@ export default function LogoMongoose(){
     const theme = useTheme().globalTheme;
 
     const logoStyle = {
-        color: theme === 'dark' ? '#880000' : '880000',
+        textDecoration: 'none',
+        color: theme === 'dark' ? '#880000' : '#880000',
     };
 
     return (

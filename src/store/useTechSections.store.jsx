@@ -187,11 +187,20 @@ const useTechSections = create((set)=>({
            {text: "Introducción", url: "introduccion"},
        ]},
     ],
+    "mongoDB": [
+        {"category":"Inicio",
+        "sections":[
+           {text: "Introducción", url: "introduccion"},
+           {text: "Instalación", url: "instalacion"},
+           {text: "Crear base de datos", url: "crear-base-de-datos"},
+       ]},
+    ],
     "mongoose": [
         {"category":"Inicio",
         "sections":[
            {text: "Introducción", url: "introduccion"},
            {text: "Instalación", url: "instalacion"},
+           {text: "Estructura básica", url: "estructura-basica"},
        ]},
     ],
     "react-router": [

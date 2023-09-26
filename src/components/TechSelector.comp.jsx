@@ -23,6 +23,7 @@ import LogoCSS from './LogoCSS.comp.jsx';
 import LogoJS from './LogoJS.comp.jsx';
 import LogoTS from './LogoTS.comp.jsx';
 import LogoGit from './LogoGit.comp.jsx';
+import LogoMongoDB from './LogoMongoDB.comp.jsx';
 import LogoMongoose from './LogoMongoose.comp.jsx';
 
 export default function TechSelector({model}){
@@ -34,6 +35,7 @@ export default function TechSelector({model}){
         { url: 'git', component: <LogoGit/> },
         // { url: 'html', component: <LogoHTML/> },
         // { url: 'javascript', component: <LogoJS/> },
+        { url: 'mongoDB', component: <LogoMongoDB/> },
         { url: 'mongoose', component: <LogoMongoose/> },
         // { url: 'typescript', component: <LogoTS/> },
         { url: 'react-router', component: <LogoReactRouter/> },

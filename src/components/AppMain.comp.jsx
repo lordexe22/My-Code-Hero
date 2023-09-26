@@ -9,21 +9,27 @@ import '../styles/main.style.css'
 
 // pages html
 import IntroduccionHtml from "../pages/HTML/Introduccion_html.page.jsx";
+
 // pages css
 import IntroduccionCss from "../pages/CSS/Introduccion_css.page.jsx";
+
 // pages javascript
 import IntroduccionJavaScript from "../pages/JavaScript/Introduccion_javaScript.page.jsx";
+
 // pages typescript
 import IntroduccionTypeScript from "../pages/TypeScript/Introduccion_typeScript.page.jsx";
+
 // pages react router
 import IntroduccionReactRouter from "../pages/React-Router/Introduccion_reactRouter.page.jsx";
 import InstalacionReactRouter from "../pages/React-Router/Instalacion_reactRouter.page.jsx";
 import EstructuraBasicaReactRouter from "../pages/React-Router/EstructuraBasica_reactRouter.page.jsx";
+
 // pages express
 import IntroduccionExpress from "../pages/Express/Introduccion_express.page.jsx";
 import InstalacionExpress from "../pages/Express/Instalacion_express.page";
 import ConceptosBasicosExpress from "../pages/Express/ConceptosBasicos_express.page";
 import EstructuraBasicaExpress from "../pages/Express/EstructuraBasica_express.page";
+
 // pages git
 import IntroduccionGit from "../pages/Git/Introduccion_git.page";
 import InstalacionGit from "../pages/Git/Instalacion_git.page";
@@ -35,8 +41,11 @@ import CommitGit from "../pages/Git/Commit_git.page";
 import RepositorioRemotoGit from "../pages/Git/RepositorioRemoto_git.page";
 import BranchesGit from "../pages/Git/Branches_git.page";
 import TagsGit from "../pages/Git/Tags_git.page";
+
 // pages mongoose
 import IntroduccionMongoose from "../pages/Mongoose/Introduccion_Mongoose.page";
+import InstalacionMongoose from "../pages/Mongoose/Instalacion_Mongoose.page";
+
 // pages react hook form
 import IntroduccionReactHookForm from "../pages/React-Hook-Form/Introduccion_ReactHookForm.page";
 import InstalacionReactHookForm from "../pages/React-Hook-Form/Instalacion_ReactHookForm.page";
@@ -97,6 +106,7 @@ export default function AppMain(){
                 {/* TypeScript pages */}
                 <Route path="/mongoose" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionMongoose/>}></Route>
+                    <Route path="instalacion" element={<InstalacionMongoose/>}></Route>
                 </Route>
 
                 {/* React Router Pager */}

@@ -187,6 +187,12 @@ const useTechSections = create((set)=>({
            {text: "Introducción", url: "introduccion"},
        ]},
     ],
+    "mongoose": [
+        {"category":"Inicio",
+        "sections":[
+           {text: "Introducción", url: "introduccion"},
+       ]},
+    ],
     "react-router": [
         {"category":"Primeros pasos",
          "sections":[

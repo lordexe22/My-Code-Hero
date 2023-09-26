@@ -8,10 +8,11 @@ import LogoTS from "../components/LogoTS.comp";
 import LogoReactRouter from "../components/LogoReactRouter.comp";
 import LogoReactHookForm from "../components/LogoReactHookForm.comp";
 import ThemeButton from "../components/ThemeButton.comp";
+import LogoMongoose from "../components/LogoMongoose.comp";
 
 
 // styles
-import '../styles/home.style.css'
+import '../styles/Home.style.css'
 
 // store
 import useUrlHandler from "../store/useUrlHandler.store";
@@ -42,14 +43,15 @@ export default function Home(){
             <h2>Bienvenido</h2>
             <ThemeButton/>
             <div className="tech-container">
-                <div className="tech-item" onClick={() => clickHandler('html')}><LogoHTML/></div>
-                <div className="tech-item" onClick={() => clickHandler('css')}><LogoCSS/></div>
+                {/* <div className="tech-item" onClick={() => clickHandler('html')}><LogoHTML/></div> */}
+                {/* <div className="tech-item" onClick={() => clickHandler('css')}><LogoCSS/></div> */}
                 <div className="tech-item" onClick={() => clickHandler('express')}><LogoExpress/></div>
                 <div className="tech-item" onClick={() => clickHandler('git')}><LogoGit/></div>
-                <div className="tech-item" onClick={() => clickHandler('javascript')}><LogoJS/></div>
-                <div className="tech-item" onClick={() => clickHandler('typescript')}><LogoTS/></div>
-                <div className="tech-item" onClick={() => clickHandler('react-router')}><LogoReactRouter/></div>
+                <div className="tech-item" onClick={() => clickHandler('mongoose')}><LogoMongoose/></div>
+                {/* <div className="tech-item" onClick={() => clickHandler('javascript')}><LogoJS/></div> */}
+                {/* <div className="tech-item" onClick={() => clickHandler('typescript')}><LogoTS/></div> */}
                 <div className="tech-item" onClick={() => clickHandler('react-hook-form')}><LogoReactHookForm/></div>
+                <div className="tech-item" onClick={() => clickHandler('react-router')}><LogoReactRouter/></div>
             </div>
         </>
     );

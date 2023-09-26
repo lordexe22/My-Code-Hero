@@ -23,17 +23,19 @@ import LogoCSS from './LogoCSS.comp.jsx';
 import LogoJS from './LogoJS.comp.jsx';
 import LogoTS from './LogoTS.comp.jsx';
 import LogoGit from './LogoGit.comp.jsx';
+import LogoMongoose from './LogoMongoose.comp.jsx';
 
 export default function TechSelector({model}){
 
     // Lista de tecnologias
     const techOptions = [
-        { url: 'html', component: <LogoHTML/> },
-        { url: 'css', component: <LogoCSS/> },
+        // { url: 'css', component: <LogoCSS/> },
         { url: 'express', component: <LogoExpress/> },
         { url: 'git', component: <LogoGit/> },
-        { url: 'javascript', component: <LogoJS/> },
-        { url: 'typescript', component: <LogoTS/> },
+        // { url: 'html', component: <LogoHTML/> },
+        // { url: 'javascript', component: <LogoJS/> },
+        { url: 'mongoose', component: <LogoMongoose/> },
+        // { url: 'typescript', component: <LogoTS/> },
         { url: 'react-router', component: <LogoReactRouter/> },
         { url: 'react-hook-form', component: <LogoReactHookForm/> },
     ];

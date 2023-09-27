@@ -44,6 +44,7 @@ import TagsGit from "../pages/Git/Tags_git.page";
 
 // pages mongoDB
 import IntroduccionMongoDB from "../pages/MongoDB/Introduccion_MongoDB.page";
+import InstalacionMongoDB from "../pages/MongoDB/Instalacion_MongoDB.page";
 
 // pages mongoose
 import IntroduccionMongoose from "../pages/Mongoose/Introduccion_Mongoose.page";
@@ -110,6 +111,8 @@ export default function AppMain(){
                 {/* MongoDB pages */}
                 <Route path="/mongoDB" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionMongoDB/>}></Route>
+                    <Route path="instalacion" element={<InstalacionMongoDB/>}></Route>
+
                 </Route>
 
                 {/* Mongoose pages */}

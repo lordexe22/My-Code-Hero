@@ -52,7 +52,7 @@ export default function InstalacionMongoDB(){
                 <img src="/My-Code-Hero/mongoDB-instalacion-5.gif" alt="mongoDB-instalacion-5.git"/>
             </div>
 
-            <p>Con esto tendramos acceso a los comandos de las aplicaciones <b>"mongod"</b>,  <b>"mongosh"</b> y <b>"mongos"</b> alijados en la carpeta bin.</p>
+            <p>Con esto tendramos acceso a los comandos de las aplicaciones <b>"mongod"</b>,  <b>"mongosh"</b> y <b>"mongos"</b> alojados en la carpeta bin.</p>
 
             <p>Con todos estos pasos ya hemos instalado correctamente mongoDB.</p>
 

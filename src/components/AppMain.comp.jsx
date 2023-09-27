@@ -45,6 +45,8 @@ import TagsGit from "../pages/Git/Tags_git.page";
 // pages mongoDB
 import IntroduccionMongoDB from "../pages/MongoDB/Introduccion_MongoDB.page";
 import InstalacionMongoDB from "../pages/MongoDB/Instalacion_MongoDB.page";
+import ConceptosBasicosMongoDB from "../pages/MongoDB/ConceptosBasicos_MongoDB.page";
+import CrearDBRemotoMongoDB from "../pages/MongoDB/CrearDBRemoto_MongoDB.page";
 
 // pages mongoose
 import IntroduccionMongoose from "../pages/Mongoose/Introduccion_Mongoose.page";
@@ -112,6 +114,8 @@ export default function AppMain(){
                 <Route path="/mongoDB" element={<Outlet/>}>
                     <Route path="introduccion" element={<IntroduccionMongoDB/>}></Route>
                     <Route path="instalacion" element={<InstalacionMongoDB/>}></Route>
+                    <Route path="conceptos-basicos" element={<ConceptosBasicosMongoDB/>}></Route>
+                    <Route path="crear-DB-remota" element={<CrearDBRemotoMongoDB/>}></Route>
 
                 </Route>
 

@@ -192,7 +192,8 @@ const useTechSections = create((set)=>({
         "sections":[
            {text: "Introducción", url: "introduccion"},
            {text: "Instalación", url: "instalacion"},
-           {text: "Crear base de datos", url: "crear-base-de-datos"},
+           {text: "Conceptos básicos", url: "conceptos-basicos"},
+           {text: "Crear DB remota", url: "crear-DB-remota"},
        ]},
     ],
     "mongoose": [

@@ -18,6 +18,20 @@ export default function ConceptosBasicosMongoDB(){
 
                 <li><b>CRUD: </b>MongoDB admite operaciones CRUD básicas que son fundamentales para la gestión de datos. Debes comprender cómo crear documentos (Create), recuperar datos (Read), actualizar documentos (Update) y eliminar documentos (Delete) utilizando las operaciones proporcionadas por MongoDB. Estas operaciones son esenciales para interactuar con los datos en tu aplicación.</li>
             </ul>
+
+            <h4>Base de datos, colecciones y documentos</h4>
+
+            <p>Antes de escribir código en mongoDB es importante conocer la relación entre las bases de datos, las colecciones y los documentos.</p>
+
+            <div style={{textAlign:'left', margin:'2vh 0'}}>
+                <img src="/My-Code-Hero/mongoDB-conceptos-basicos-1.jpg" alt="mongoDB-conceptos-basicos-1.jpg"/>
+            </div>
+
+            <ul>
+                <li><b>Base de datos: </b>En MongoDB, una base de datos es el contenedor de alto nivel para los datos. Puedes tener múltiples bases de datos independientes en un solo servidor MongoDB, y cada una tiene su propio conjunto de colecciones. Cada base de datos tiene su propio espacio en el disco y no comparte estos datos con otras bases de datos.</li>
+                <li><b>Colecciones: </b>Dentro de cada base de datos, los datos se organizan en colecciones. Una colección es un grupo de documentos MongoDB, similar a cómo una tabla es un grupo de filas en las bases de datos relacionales. Sin embargo, a diferencia de las tablas, las colecciones no obligan a sus documentos a tener un esquema fijo, lo que significa que los documentos dentro de una colección pueden tener diferentes campos.</li>
+                <li><b>Documentos: </b>Los documentos son el nivel más bajo en esta jerarquía. Un documento es un conjunto de pares clave-valor y es la unidad básica de datos en MongoDB. Los documentos dentro de una colección se identifican de manera única por un campo _id que se genera automáticamente al insertar un documento.</li>
+            </ul>
         </>
     )
 }

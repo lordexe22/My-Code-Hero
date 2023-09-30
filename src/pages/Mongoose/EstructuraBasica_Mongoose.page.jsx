@@ -9,60 +9,117 @@ export default function EstructuraBasicaMongoose(){
     const { globalTheme } = useTheme();
 
     // Codigos
-    const code1 = `// 🎌1 - Importación de Mongoose
-const mongoose = require('mongoose');
+    const code1 = `mongod`;
 
-// 🎌2 - Conexión a la Base de Datos
-mongoose.connect('mongodb://localhost/tu-base-de-datos', { useNewUrlParser: true, useUnifiedTopology: true });
+    const code2 = `// 🎌1 - Importación de mongoose
+import mongoose from 'mongoose';
 
-// 🎌3 - Definición de un Modelo
-const Tarea = mongoose.model('Tarea', {
-    nombre: String,
-    completada: Boolean,
+// 🎌2 - Conexión de la base de datos
+await mongoose.connect('mongodb://127.0.0.1:27017/Usuarios');
+
+// 🎌3 - Crear un esquema
+const userSchema = new mongoose.Schema({
+    user: String,
+    password: String,
+    email: String,
+    age: Number,
+    registerDate: Date,
+    premium: Boolean,
 });
 
-// 🎌4 - Creación y Guardado de una Tarea
-const nuevaTarea = new Tarea({
-    nombre: 'Completar el tutorial de Mongoose',
-    completada: false,
-});
+// 🎌4 - Agregar métodos al esquema:
+userSchema.methods.showData = function showData() {
+    const validUser = 
+        this.user && 
+        this.password && 
+        this.email && 
+        this.age && 
+        this.registerDate &&
+        this.premium !== undefined;
+    if(validUser){
+        console.log(\`user: \${this.user}
+            password: \${this.password}
+            email: \${this.email}
+            age: \${this.age}
+            registerDate: \${this.registerDate}
+            premium: \${this.premium}\`);
+    } else { console.log ('invalid user') }
+}
 
-nuevaTarea.save((error) => {
-    if (error) {
-    console.error('Error al guardar la tarea:', error);
-    } else {
-    console.log('Tarea guardada con éxito.');
-    }
-});
+// 🎌5 - Modelo del esquema
+const User = mongoose.model('User', userSchema);
 
-// 🎌5 - Consulta de Tareas
-Tarea.find((error, tareas) => {
-    if (error) {
-    console.error('Error al consultar las tareas:', error);
-    } else {
-    console.log('Tareas encontradas en la base de datos:');
-    console.log(tareas);
-    }
-});
-`;
+// 🎌6 - Instancias del modelo
+const user1 = new User({
+    user: 'Tadeo123',
+    password: 'elTadeo123',
+    email: 'tadeo123@test.com',
+    age: 25,
+    registerDate: new Date(),
+    premium: false,
+})
+
+const user2 = new User({
+    user: 'Ratata',
+    password: 'ratata_22',
+    email: 'ratata@test.com',
+    age: 20,
+    registerDate: new Date(),
+    premium: true,
+})
+
+// 🎌7 - Guardar en la base de datos
+async function saveUsers() {
+    await user1.save();
+    await user2.save();
+}
+
+saveUsers();
+
+// 🎌8 - Ejecutar métodos
+user1.showData();
+user2.showData();`
 
     return(
         <>
             <h3>Estructura básica</h3>
 
-            <p>En esta sección se presenta la estructura básica de un programa que implementa Mongoose.</p>
+            <p>Como paso previo para que funcione cualquier código que implemente <b>mongoose</b> en su código se debe ejecutar y dejar en funcionamiento la base de datos de mongoDB en la terminal:</p>
 
             <BeautifullCode code={code1} theme={globalTheme}></BeautifullCode>
 
-            <p>🎌1 - Importación de Mongoose: Se importa el módulo Mongoose. Este módulo es esencial para trabajar con MongoDB desde Node.js.</p>
+            <p>En esta sección se presenta la estructura básica de un programa que implementa Mongoose. Como primer paso se va a estudiar el siguiente código:</p>
 
-            <p>🎌2 - Conexión a la Base de Datos: Establecemos una conexión a la base de datos MongoDB utilizando mongoose.connect. Asegúrate de reemplazar 'tu-base-de-datos' con el nombre de tu propia base de datos. Esta conexión es fundamental para interactuar con MongoDB.</p>
+            <BeautifullCode code={code2} theme={globalTheme}></BeautifullCode>
 
-            <p>🎌3 - Definición de un Modelo: Definimos un modelo llamado Tarea que representará las tareas en nuestra aplicación. El modelo se basa en un esquema que especifica la estructura de las tareas, incluyendo los campos nombre (una cadena de texto) y completada (un valor booleano).</p>
+            <p><b>🎌1 - Importación de mongoose: </b>Se importa el objeto <b>mongoose</b> de la libreria <b>mongoose</b>. A partir de este objeto podremos hacer todas las operaciones básicas para hacer funcionar la base de datos.</p>
 
-            <p>🎌4 - Creación y Guardado de una Tarea: Creamos una nueva tarea llamada nuevaTarea utilizando el modelo Tarea. Configuramos esta tarea con un nombre y un estado de completado. Luego, utilizamos el método save para guardar la tarea en la base de datos. Si ocurre algún error, lo registramos en la consola; de lo contrario, mostramos un mensaje de éxito.</p>
+            <p><b>🎌2 - Conexión de la base de datos: </b> En este caso se establece la conexión de la base de datos en el <b>"localhost"</b>. En ocaciones podria no funcionar y requerirse reemplazar <b>localhost</b> por la dirección IP <b>"127.0.0.1"</b> que es su equivalente. La conexión se establece en el puerto 27017 que es el puerto al que se conecta mongoDb por defecto y por último, el nombre <b>Usuarios</b> es la base de datos a la cual se intenta conectar en este programa. Si no existe la base de datos especificada se la crea de forma automatica.</p>
 
-            <p>🎌5 - Consulta de Tareas: Utilizamos el método find de Mongoose para consultar y recuperar todas las tareas almacenadas en la base de datos. Cualquier error que ocurra se maneja adecuadamente, y si la consulta tiene éxito, mostramos las tareas en la consola.</p>
+            <p><b>🎌3 - Crear un esquema: </b> Un esquema en mongoose es un objeto que permite establecer cuales van a ser los campos que se espera que tengan los documentos dentro de la base de datos y que tipo de datos se aceptan como valor. En este caso el esquema esta orientado al manejo de datos de usuarios.</p>
+
+            <p><b>🎌4 - Agregar métodos al esquema: </b>Se añade un método adicional al esquema creado anteriormente. Los métodos agregados de esta forma deben ser agregados antes de crear un modelo con el esquema, razón por la cual se recomienda agregar el método justo despues de definir el esquema para así evitar errores. En este caso el método muestra los datos del usuario registrado siempre y cuando sus datos sean válidos.</p>
+
+            <p><b>🎌5 - Modelo del esquema: </b>Se crea un modelo a partir del esquema definido previamente. El modelo puede pensarse como una colección en <b>mongoDB</b>, de hecho el el primer parámetro del método <b>'User'</b> va a ser el nombre que se le va a dar a la colección que se va a crear dentro de la base de datos y el segundo parámetro <b>'userSchema'</b> es el esquema en el cual se basa este modelo.</p>
+
+            <p><b>🎌6 - Instancias del modelo: </b>Se crean dos instancias a partir del modelo <b>'user'</b> definido en el item 🎌5. Cada instancia va a ser un <b>documento</b> de mongoDB y su contenido coincide con el cuerpo del esquema <b>'userSchema'</b> definido en el item 🎌3. Además cada una de las instancias va a contar con el método <b>showData</b> creado en el item 🎌4.</p>
+
+            <p><b>🎌7 - Guardar en la base de datos:</b> Para guardar los documentos dentro de la base de datos se usa el método <b>'save'</b>. El proceso de guardado es asíncrono por lo cual es recomendable ejecutar este proceso dentro de una función asíncrona empleando los comandos <b>'async'</b> y <b>'await'</b>. Justo después de crear el método se lo ejecuta y se guardan ambos documentos con la información de los usuarios dentro de la base de datos, especificamente en la base de datos <b>'Usuarios'</b> y en la colección <b>'User'</b>.</p>
+
+            <p><b>🎌8 - Ejecutar métodos: </b>Como último punto se ejecutan los métodos que se les fueron asignados a los documentos. El resultado es mostrar la información de cada documento en la consola.</p>
+
+            <div style={{textAlign:'left', margin:'2vh 0'}}>
+                <img src="/My-Code-Hero/mongoose-estructura-basica-1.jpg" alt="mongoose-estructura-basica-1.jpg"/>
+            </div>
+
+            <p>Si se entra a <b>MongoDB Compass</b> podremos ver que efectivamente se ha creado la base de datos <b>Usuarios</b>, dentro de ella la colección <b>users</b> y dentro de esta colección se han agregado los documentos con los datos correspondientes a <b>'user1'</b> y <b>'user2'</b>.</p>
+
+
+            <div style={{textAlign:'left', margin:'2vh 0'}}>
+                <img src="/My-Code-Hero/mongoose-estructura-basica-2.jpg" alt="mongoose-estructura-basica-2.jpg"/>
+            </div>
+
+            <p><b>NOTA: </b>En el punto 🎌5 el primer parámetro <b>'User'</b> es el nombre que se le da a las colecciones, sin embargo, el nombre que se le de siempre va a ser editado y escrito en minúsculas y se le agregara una letra <b>'s'</b> al final (salvo que el nombre de la colección acabe en 's').</p>
 
         </>
     )
